@@ -1,0 +1,876 @@
+:root {
+    --darkgray: #212121;
+    --white: #fff;
+    --lightblack: #2A2A2A;
+    --headingColor: #003BA5;
+    --textColor: #313131;
+    --darkBlue: #0058F7;
+    --btnColor: #002C7C;
+    --labelColor: #313131;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: var(--textColor);
+}
+p, h1, h2, h3, h4, h5{
+    font-family: 'Poppins', sans-serif;
+}
+/* custom heading for h2 tag */
+.headingBlock{
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--headingColor);
+}
+/* custom heading for h2 tag */
+/* Navigation Section CSS */
+.nav-branding{
+    font-size: 2rem;
+}
+nav.navbar.navbar-expand-sm {
+    background: #ffffff81;
+    box-shadow: 4px 9px 50px #00000029;
+    min-height: 100px;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav-item a{
+    color: var(--lightblack);
+    font-size: 1.125rem;
+    line-height: 1.5em;
+}
+.nav-link{
+    transition: 0.6s ease-out;
+}
+.nav-link:hover{
+    color: var(--red);
+}
+.active {
+    color: var(--darkBlue) !important;
+    font-weight: 600;
+    text-decoration: underline 3px;
+    text-underline-offset: 10px;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.5s ease;
+    background-color: var(--white);
+}
+header.navigation-header {
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+a.nav-links-btn {
+    background-image: linear-gradient(90deg, #0058F7, #002C7C);
+    color: var(--white) !important;
+    padding: 7px 30px !important;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 15px 15px #0f47af25;
+}
+a.nav-link.nav-links-btn.active {
+    text-decoration: none;
+}
+a.nav-links-btn:hover{
+    color: var(--white);
+}
+/* Media Query  */
+@media(max-width:1024px){
+    .hamburger{
+      display: block;
+    }
+    .navbar-expand-sm .navbar-nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-item a{
+        color: var(--white);
+    }
+    .nav-menu{
+      position: fixed;
+      right: -100%;
+      top: 0px;
+      gap: 0;
+      flex-direction: column;
+      background-color: #0058f7d4;
+      width: 70%;
+      text-align: center;
+      transition: 1.1s;
+      padding-top: 0;
+      height: 100vh;
+    }
+    .nav-item{
+      margin: 14px 0;
+    }
+    .nav-menu.active{
+      right: 0;
+    }
+    a.nav-link.active {
+        color: #fff !important;
+    }
+    .mainBanner h1 {
+        font-size: 2rem !important;
+    }
+}
+@media(max-width:991px){
+    .setMainCol{
+        flex-wrap: wrap;
+    }
+    header.navigation-header .container {
+        align-items: unset !important;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .innerSerSecLeft img, .innerSerSecRight img {
+        min-height: 215px !important;
+    }
+    .serviceNetwork .textBlockLeft, .serviceNetwork .textBlockRight{
+        padding: 25px 20px !important;
+    }
+    .headingBlock {
+        font-size: 1.2rem !important;
+    }
+    .innerSerSecLeft p, .innerSerSecRight p{
+        padding: 0 !important;
+        margin-bottom: 2px !important;
+    }
+    .ftrMainSec .collSec, .ftrMainSec .collThr, .ftrMainSec .collFor{
+        padding-top: 1rem !important;
+    }
+    .ftrMainSec .ftrMenu ul li {
+        margin: 5px 0 !important;
+    }
+    .ftrImgBlock img
+    {
+        width: 80%;
+    }
+    .ftrMainSec .collPic img{
+        width: 50%;
+    }
+    .setMargin{
+        margin-top: 0 !important;
+    }
+    .serviceNetwork p {
+        font-size: 14px;
+    }
+    .financeSection {
+        padding: 1rem !important;
+    }
+    .financeSection .textBlock {
+        padding: 0 20px 0 0 !important;
+    }
+    .financeSection .imageBlock {
+        padding: 50px 20px !important;
+    }
+    lottie-player:nth-child(2) {
+        height: 290px !important;
+        transform: translate(0, 5%) !important;
+        left: 20% !important;
+    }
+    .financeSection p{
+        padding-top: 0 !important;
+    }
+    section.financeSection::before {
+        height: 70px !important;
+    }
+    .ftrMainSec .collFor{
+        padding-top: 3rem !important;
+    }
+}
+/* define custom classes for converting flex row to column*/
+@media(max-width:767px){
+    .biotesticalSection{
+        height: 100vh !important;
+    }
+    .nav-menu{
+        width: 100%;
+    }
+    .bannerImg::before {
+        overflow: hidden !important;
+        background-size: cover !important;
+    }
+    nav.navbar.navbar-expand-sm {
+        min-height: 70px;
+    }
+    /* converting flex row to column*/
+    .setFlexCol{
+        flex-direction: column-reverse;
+    }
+    /* converting flex row to column*/
+    /* set main column */
+    .setMainCol{
+        flex-wrap: wrap;
+    }
+    /* set main column */
+    .ftrMainSec .collPic::before {
+        width: 100% !important;
+        right: 0 !important;
+        height: 230px !important;
+        bottom: 0px !important;
+    }
+    .setColPadding{
+        padding: 30px 10px !important;
+    }
+    .financeSection .textBlock,
+    .serviceNetwork .textBlockLeft, .serviceNetwork .textBlockRight,
+    .funcTextBlock p{
+        padding: 25px 10px !important;
+    }
+    .mainBanner h1{
+        font-size: 1.7rem !important;
+    }
+    footer.footerSec {
+        text-align: center;
+    }
+    .ftrMainSec .collOne .social-link ul {
+        gap: 10px !important;
+        justify-content: center;
+    }
+    .ftrMainSec .collOne .social-link i.fa {
+        padding: 10px !important;
+        font-size: 15px !important;
+        width: 35px !important;
+    }
+    .ftrMainSec .collFor ul{
+        column-count: unset !important;
+    }
+    .ftrMainSec .socialLinksInfo{
+        padding-top: 0 !important;
+    }
+    footer.footerSec {
+        padding: 0 10px;
+    }
+    .ftrCopyrightSec p {
+        margin-bottom: 0;
+    }
+    .financeInnerSec{
+        padding: 0;
+    }
+    .active{
+        color: #ff10 !important;
+    }
+    .advisorySec .innerSerBlock {
+        padding: 0 !important;
+    }
+    .financeSection .imageBlock {
+        padding: 30px 10px !important;
+    }
+    lottie-player:nth-child(2) {
+        height: 210px !important;
+        transform: translate(0, 5%) !important;
+        left: 10% !important;
+    }
+    lottie-player:nth-child(1) {
+        width: 150px !important;
+        top: 5px !important;
+        height: 100px !important;
+    }
+    .financeSection h2,
+    .innerSerSecLeft h2,
+    .legalSection p{
+        padding: 0 !important;
+    }
+    .legalSection img {
+        width: 70%;
+    }
+    .financeSection p {
+        margin: 0;
+    }
+    .ftrMainSec .collFor{
+        padding-top: 1rem !important;
+    }
+    .financeSection .imggSec::before {
+        width: 60px !important;
+        height: 60px !important;
+        bottom: 40px !important;
+        right: 20px !important;
+    }
+    .featureSection h2{
+        width: 100% !important;
+    }
+    .featureSection{
+        height: unset !important;
+    }
+}
+/* Media Query  */
+/* Animations Section*/
+.imgSection img,
+.imgSection:before{
+    transition: all 0.375s ease-in-out;
+    transform: translate(0,0);
+}
+.imgSection:hover:before {
+    transform: translate(10px, -5px);
+}
+.imgSection:hover img{
+    transform: translate(-5px, 10px);
+}
+/* Animations Section*/
+/* Navigation Section CSS */
+/* Main Page Banner Section CSS */
+.sliderSection,
+.sliderInnerSection {
+    background-size: cover !important;
+    background-position: center !important;
+    width: 100%;
+}
+.sliderSection{
+    height: 100vh;
+}
+.sliderInnerSection{
+    height: 80vh;
+}
+.bannerBlock{
+    background: url(assets/young-beautiful-hispanic-woman-scientist-using-microscope-writing-notebook-laboratory.webp) no-repeat;
+}
+.bannerImg{
+    position: relative;
+}
+.bannerImg::before {
+    content: '';
+    background: url(assets/banner-before-image.webp) no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    max-width: 100%;
+  }
+.mainBanner.text-white {
+    z-index: 1;
+}
+.mainBanner h1{
+    font-size: 3.175rem;
+    font-weight: 900;
+}
+.mainBanner .bannerBlock p{
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 30px 0;
+}
+.home a.button{
+    background-color: var(--white);
+    color: var(--darkBlue);
+    text-decoration: none;
+    padding: 9px 20px;
+    border-radius: 8px;
+    box-shadow: 2px 15px 15px #0f47af25;
+    font-size: 1.125rem;
+}
+/* Main Page Banner Section CSS */
+/* Main Page About Section CSS */
+.aboutBlock{
+    min-height: 60vh;
+    width: 100%;
+    background: url(assets/about-banner.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.aboutBlock .innerSection {
+    gap: 30px;
+}
+.imgSection img{
+    width: 100%;
+    border-radius: 12px;
+}
+.aboutBlock h3{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--textColor);
+}
+.aboutBlock .content>p:first-of-type {
+    font-size: 1.25rem;
+}
+.imgSection,.imgSection img {
+    z-index: 2;
+    position: relative;
+}
+.imgSection::before {
+    background: var(--headingColor);
+    border: 1px solid var(--headingColor);
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: -15px;
+    left: 14px;
+    right: 0;
+    border-radius: 12px;
+}
+.imgSection::after {
+    border: 1px solid var(--darkBlue);
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    bottom: -18px;
+    left: -12px;
+    right: 0;
+}
+/* Main Page About Section CSS */
+/* Main Page Biotestical Section CSS */
+.biotesticalSection {
+    height: 60vh;
+    width: 100%;
+    background: url(assets/biotestical-image.webp) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+.biotesticalSection .innerBlock{
+    width: 100%;
+    background: url(assets/innerBlock.webp) no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.biotesticalSection .innerBlock h2{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+/* Main Page Biotestical Section CSS */
+/* Main Page Service Section CSS */
+.serviceSec .innerSerBlock{
+    background-color: #F5F8FF;
+}
+/* Main Page Service Section CSS */
+/* Main Page Service Inner Section CSS */
+.serviceNetwork .textBlockLeft,
+.serviceNetwork .textBlockRight {
+    padding: 0 80px 0 70px;
+}
+.innerSerSecLeft h2{
+    padding-left: 10px;
+}
+.innerSerSecLeft p, .innerSerSecRight p {
+    padding: 10px 0 0 0;
+}
+.innerSerSecLeft img, .innerSerSecRight img {
+    width: 100%;
+    min-height: 350px;
+    object-fit: cover;
+}
+/* Main Page Service Inner Section CSS */
+/* Main Page legal Section CSS */
+.legalSection{
+    width: 100%;
+    background: url(assets/legal-background.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.legalSection p{
+    padding: 20px 0;
+}
+.legalSection .legalImage {
+    flex-direction: column;
+    gap: 20px;
+}
+/* Main Page legal Section CSS */
+/* Main Page finance Section CSS */
+.imageInnerSec{
+    gap: 20px;
+}
+.imageInnerSec img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+.imggFirst img {
+    margin-top: 70px;
+}
+.imageBlock img {
+    z-index: 2;
+    position: relative;
+}
+.financeInnerSec .textBlock,
+.financeInnerSec .imageBlock {
+    position: relative;
+    z-index: 2;
+}
+
+.financeSection .imageBlock {
+    background-image: linear-gradient(239deg, #0058F7, #002C7C);
+    padding: 70px 30px;
+    border-radius: 10px;
+    position: relative;
+}
+lottie-player:nth-child(1){
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+lottie-player:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    right: 0;
+    transform: translate(0, -10%);
+    z-index: 1;
+}
+.financeSection h2{
+    padding-left: 10px;
+}
+.financeSection p{
+    padding-top: 20px;
+}
+.financeSection .textBlock{
+    padding: 0 90px 0 0;
+}
+.financeSection .imggSec,
+section.financeSection{
+    position: relative;
+}
+.financeSection .imggSec::before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    background: url(assets/circle.webp) no-repeat;
+    bottom: 20px;
+    right: 20px;
+    background-size: contain;
+}
+section.financeSection::before {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    content: '';
+    background: #F5F8FF no-repeat;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+/* Main Page finance Section CSS */
+/* Main Page Advisory Section CSS */
+.advisorySec{
+    width: 100%;
+    background: url(assets/advisory-background.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* Main Page Advisory Section CSS */
+/* footer section Css */
+
+.ftrMainSec{
+    padding-top: 2rem;
+}
+.ftrMainSec h3 {
+    color: var(--headingColor);
+    font-size: 1rem;
+    text-decoration: underline 2px ;
+    text-underline-offset: 10px;
+    text-decoration-color: #0058F7;
+}
+.ftrMainSec .collFor ul {
+    column-count: 2;
+}
+.ftrMainSec .collFor ul li:first-of-type {
+    margin-top: 0;
+}
+.ftrMainSec ul{
+    padding: 0;
+}
+.ftrMainSec li a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+}
+.ftrMainSec li {
+    list-style: none;
+}
+footer.footerSec .ftrHeadingSec {
+    margin-bottom: 20px;
+}
+.ftrMainSec .collSec, .ftrMainSec .collThr, .ftrMainSec .collFor {
+    padding-top: 3em;
+}
+.ftrMainSec .collOne {
+    margin-top: -20px;
+}
+.ftrMainSec .ftrMenu ul li {
+    margin: 0 0 10px 0;
+}
+.ftrMainSec .ftrMenu ul li:last-child {
+    margin: 0;
+}
+.ftrMainSec .socialLinksInfo {
+    padding-top: 3em;
+}
+.ftrMainSec .socialLinksInfo h3{
+    color: var(--darkBlue);
+    text-decoration: none;
+}
+.ftrMainSec .collOne .social-link ul {
+    display: flex;
+    gap: 12px;
+}
+.ftrMainSec .collOne .social-link ul li a{
+    color: #fff !important;
+}
+.ftrMainSec .collOne .social-link i.fa{
+    padding: 15px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    background: #003BA5;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    box-shadow: 5px 2px 7px #0f47af16;
+    color: #fff;
+}
+section.ftrCopyrightSec {
+    background-image: linear-gradient(90deg, #0542CD, #001952);
+    box-shadow: 0px -14px 16px #0f47af16;
+    border-radius: 10px 10px 0 0;
+}
+.ftrMainSec .collFor{
+    position: relative;
+    z-index: 2;
+}
+.ftrMainSec .collPic {
+    position: relative;
+    margin-top: -65px;
+}
+.ftrMainSec .collPic img{
+    position: relative;
+    z-index: 2;
+}
+.ftrMainSec .collPic::before {
+    position: absolute;
+    content: '';
+    width: 460px;
+    height: 380px;
+    z-index: 1;
+    background: url(assets/background-doctor.webp) no-repeat;
+    bottom: -40px;
+    right: -60px;
+    background-size: cover;
+}
+/* footer section Css */
+/* introduction page css start */
+/* banner css */
+.introductionSec{
+    background: url(assets/biotechnology-specialist-laboratory-conducting-experiments.webp) no-repeat;
+}
+/* banner css */
+/* intro css */
+.aboutOfficeIntro img{
+    border-radius: 12px;
+}
+.aboutOfficeIntro h2 {
+    width: 300px;
+}
+.aboutOfficeIntro .content p:last-child {
+    padding-bottom: 0;
+}
+.aboutOfficeIntro .innerSection{
+    gap: 30px;
+}
+.aboutOfficeIntro .content p {
+    padding: 20px 0;
+    margin-bottom: 0;
+}
+.aboutOfficeIntro .imgIntro {
+    position: relative;
+}
+.aboutOfficeIntro .imgIntro img{
+    position: relative;
+    z-index: 2;
+}
+.aboutOfficeIntro .imgIntro::before {
+    position: absolute;
+    content: '';
+    width: 190px;
+    height: 100%;
+    z-index: 0;
+    background: #fff;
+    box-shadow: 35px 11px 50px #00000016;
+    top: -20px;
+    right: -40px;
+    background-size: cover;
+    border-radius: 12px 12px 12px 0;
+    max-width: 100%;
+    min-height: 680px;
+}
+.aboutOfficeIntro .imgIntro::after {
+    position: absolute;
+    content: '';
+    width: 135px;
+    height: 135px;
+    z-index: 2;
+    background: url(assets/imagerBefore.webp) no-repeat;
+    bottom: -20px;
+    right: -33px;
+    background-size: contain;
+}
+/* intro  css */
+/* features section  css */
+.featureSection {
+    background-image: linear-gradient(239deg, #0058F7, #002C7C);
+    height: 90vh;
+}
+.featureSection h2{
+    width: 550px;
+}
+.featureSection section.iconBlocks {
+    gap: 30px;
+}
+section.featureSection .imageText {
+    gap: 20px;
+}
+.featureSection .imageText {
+    margin-bottom: 40px;
+}
+section.featureSection .imageText img {
+    background: #fff;
+    padding: 7px;
+    border-radius: 7px;
+}
+/* features section  css */
+/* functional section  css */
+.functionalitySec{
+    width: 100%;
+    background: url(assets/imagetext.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.functionalitySec img {
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.functionalitySec .funcImageBlock {
+    margin-top: -70px;
+    position: relative;
+    z-index: 2;
+}
+.funcTextBlock{
+    position: relative;
+    z-index: 2;
+}
+.functionalitySec .funcImageBlock::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #0058F7;
+    box-shadow: 5px 11px 37px #0F47AF16;
+    top: -20px;
+    right: -20px;
+    background-size: cover;
+    border-radius: 12px;
+}
+.functionalitySec .innerSection {
+    gap: 40px;
+    position: relative;
+}
+.functionalitySec .innerSection::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 490px;
+    z-index: 1;
+    background: #fff;
+    box-shadow: 5px 11px 37px #0F47AF16;
+    top: 70px;
+    right: 0px;
+    left: 0;
+    background-size: cover;
+    border-radius: 12px;
+}
+.funcTextBlock p:last-child {
+    padding-bottom: 0;
+}
+.funcTextBlock p {
+    margin: 0;
+    padding: 0 80px 40px 0;
+}
+/* functional  section  css */
+/* introduction page css end */
+/* login page css start */
+
+.loginSec{
+    background: url(assets/tablet-login-concept-illustration.webp) no-repeat;
+}
+.loginSec .mainBanner h2{
+    color: var(--headingColor);
+    font-weight: 700;
+}
+.loginSec .mainBanner {
+    width: 500px;
+    margin: 100px auto 0;
+    background: #fff;
+    box-shadow: 5px 11px 37px #78A4F315;
+    border-radius: 4px;
+}
+.loginSec .mainBanner form label{
+    color: var(--labelColor);
+}
+.loginSec .mainBanner form{
+    margin-top: 30px;
+}
+.loginSec .mainBanner form input {
+    border: 0.5px solid rgba(112, 112, 112, 0.5);
+    border-radius: 4px;
+    padding: 7px 12px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.loginSec .mainBanner form input:last-child{
+    margin-bottom: 0;
+}
+.loginSec .mainBanner form button {
+    margin-top: 10px;
+    background-image: linear-gradient(45deg, #0058F7, #002C7C);
+    color: var(--white);
+    border-radius: 10px;
+    box-shadow: 2px 5px 12px #0F47AF25;
+    padding: 10px;
+    width: 100%;
+}
+.loginSec .mainBanner form input::placeholder {
+    color: #31313150;
+}
+
+/* login page css start */
