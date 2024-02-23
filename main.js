@@ -20,7 +20,9 @@ jQuery(document).ready(function(){
 
 jQuery(document).ready(function() {
 	jQuery(".hamburger").click(function() {
-  jQuery('html').addClass('html-burger-open');
-  jQuery('body').addClass('html-burger-open');
+    if(jQuery(".hamburger").has(".active")){
+      jQuery('html').toggleClass('html-burger-open');
+    jQuery('body').toggleClass('html-burger-open');
+    }
 });
 });
