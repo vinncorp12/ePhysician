@@ -196,6 +196,115 @@ a.nav-links-btn:hover{
     }
 }
 @media(max-width:991px){
+    
+    .supportSec,
+    .innovationSec,
+    .databaseSec,
+    .managementSec,
+    .benefitSec,
+    .exampleSec {
+        padding: 2rem 1rem !important;
+    }
+    .concludeSec img{
+        height: 370px !important;
+    }
+    .concludeSec .innerConcludeBlock{
+        min-height: 370px !important;
+    }
+    .concludeSec .concludeImage .innerSubBlock::before{
+        min-height: 430px !important;
+    }
+    .benefitSec .benefitImg .innerBenefitBlock::after {
+        width: 55px !important;
+        height: 55px !important;
+        bottom: -34px !important;
+        left: -17px !important;
+    }
+    body .adoptSec .cardChildSec .card-title {
+        font-size: 0.83rem !important;
+    }
+    .careSec .innerCareImage {
+        transform: translate(0) !important;
+    }
+    .benefitTxtBlock{
+        padding-left: 10px !important;
+    }
+    .benefitSec ul li {
+        font-size: .9rem;
+    }
+    .managementSec .careImage {
+        min-height: 360px !important;
+    }
+    .managementSec .imagePositionCare {
+        left: -24px !important;
+        max-width: 230px !important;
+        min-height: 470px !important;
+    }
+    .supportInnerBlock::before {
+        bottom: -20px !important;
+    }
+    .managementSec lottie-player {
+        position: absolute;
+        left: 0px !important;
+    }
+    .benefitSec img {
+        width: 100%;
+        height: 380px !important;
+        max-width: 100% !important;
+    }
+    .benefitSec .minInnerImage{
+        min-height: 380px !important;
+    }
+    .innovationTxtBlock{
+        padding-right: 10px !important;
+    }
+    .benefitSec .mainImage::before {
+        bottom: -17px !important;
+        right: 10px !important;
+        min-height: 380px !important;
+        height: auto !important;
+    }
+    .benefitSec .imagePosition {
+        min-height: 520px !important;
+        left: -25px !important;
+        border-radius: 0 12px 0 12px;
+        max-width: 120px !important;
+        top: -46px !important;
+    }
+    .creatingDBSec{
+        padding: 0 !important;
+    }
+    .dbTxtBlock{
+        padding-top: 1rem !important;
+    }
+    .databaseSec .innerDbSec::before {
+        top: 40px !important;
+        min-height: 710px !important;
+    }
+    .databaseSec .creatingDBTxtBlock {
+        padding: 50px 10px 0 10px !important;
+    }
+    .careSec .careImg .careInnerImage::before {
+        width: 80px !important;
+        height: 70px !important;
+        top: -17px !important;
+        right: -18px !important;
+        background-size: contain !important;
+    }
+    .supportSec .cardChildSec{
+        gap: 15px !important; 
+    }
+    .supportInnerBlock::before, .supportInnerBlock::after {
+        width: 60px !important;
+        height: 60px !important;
+    }
+    .supportInnerBlock::after {
+        right: -20px !important;
+    }
+    body .supportSec p.card-title {
+        min-height: 100px !important; 
+        font-size: 0.8rem !important;
+    }
     .bannerImg::before {
         background-size: cover !important;
     }
@@ -388,6 +497,12 @@ a.nav-links-btn:hover{
 /* set banner space on tablet device*/
 /* define custom classes for converting flex row to column*/
 @media(max-width:767px){
+    .managementTxtBlock{
+        padding: 0 !important;
+    }
+    .supportSec .chestPara p{
+        width: 100% !important;
+    }
     .loginSec .mainBanner form input, .formMainSec form input {
         padding: 7px 15px 7px 10px !important;
     }
