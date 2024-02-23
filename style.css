@@ -497,8 +497,95 @@ a.nav-links-btn:hover{
 /* set banner space on tablet device*/
 /* define custom classes for converting flex row to column*/
 @media(max-width:767px){
-    .managementTxtBlock{
+    .managementSec h2.headingBlock {
+        font-size: 1.3rem !important;
+    }
+    .ftrMainSec .collFor h3::before{
+        content: unset !important;
+    }
+    .ftrMainSec .collFor h3{
+        text-decoration: underline 2px !important;
+        text-underline-offset: 10px !important;
+    }
+    .managementTxtBlock,
+    .benefitTxtBlock {
         padding: 0 !important;
+    }
+    .benefitSec img {
+        height: 300px !important;
+    }
+    /* .benefitSec .imagePosition{
+        min-height: 380px !important;
+    } */
+    .benefitSec .mainImage::before {
+        bottom: -10px !important;
+    }
+    .benefitSec .mainImage::before,
+    .benefitSec .minInnerImage{
+        min-height: 300px !important;
+    }
+    .benefitSec .imagePosition {
+        min-height: 340px !important;
+        top: -10px !important;
+    }
+    .benefitSec .benefitImg .innerBenefitBlock::after {
+        width: 50px !important;
+        height: 50px !important;
+        bottom: -22px !important;
+        left: -15px !important;
+    }
+    .adoptInnerBlock,
+    .dbTxtBlock,
+    .careSec .careTxtBlock {
+        padding: 0 !important;
+    }
+    .careSec .careImg .careInnerImage::before {
+        right: -16px !important;
+    }
+    .careSec .innerCareImage {
+        min-height: 350px !important;
+    }
+    .concludeTxtBlock p{
+        padding-bottom: 10px !important;
+    }
+    .concludeSec img {
+        height: 350px !important;
+    }
+    .concludeSec .innerConcludeBlock{
+        min-height: 350px !important;
+    }
+    .concludeSec .concludeImage .innerSubBlock::before {
+        min-height: 380px !important;
+        top: -14px !important;
+    }
+    body .supportSec p.card-title {
+        min-height: 50px !important;
+    }
+    .supportInnerBlock::after {
+        right: -10px !important;
+        top: 80px !important;
+        width: 50px !important;
+        height: 50px !important;
+    }
+    .managementSec .imagePositionCare {
+        left: -24px !important;
+        max-width: 230px !important;
+        min-height: 400px !important;
+        top: -10px !important;
+    }
+    .managementSec lottie-player{
+        height: 320px !important;
+    }
+    .managementSec .careImage {
+        min-height: 270px !important;
+    }
+    .databaseSec .creatingDBTxtBlock {
+        padding: 20px 0 0 0 !important;
+    }
+    .managementSec .careImage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .supportSec .chestPara p{
         width: 100% !important;
@@ -880,7 +967,6 @@ a.nav-links-btn:hover{
 .concludeSec .concludeImage:hover img{
     transform: scale(1.1);
     border-radius: 12px;
-    max-width: 100%;
 }
 .careSec .careImg:hover .careInnerImage::before{
     transform: rotate(90deg);
@@ -1252,7 +1338,7 @@ section.ftrCopyrightSec {
 }
 .ftrMainSec .collPic {
     position: relative;
-    margin-top: -65px;
+    margin-top: -54px;
 }
 .ftrMainSec .collPic img{
     position: relative;
@@ -1261,13 +1347,33 @@ section.ftrCopyrightSec {
 .ftrMainSec .collPic::before {
     position: absolute;
     content: '';
-    width: 400px;
-    height: 335px;
+    width: 370px;
+    height: 300px;
     z-index: 1;
     background: url(assets/background-doctor.webp) no-repeat;
-    bottom: -40px;
-    right: -100px;
+    bottom: -25px;
+    right: -90px;
     background-size: cover;
+}
+.ftrMainSec .collFor h3 {
+    position: relative;
+}
+.ftrMainSec .collFor h3::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #0058F7;
+    top: 7px;
+    left: 0;
+    right: 0;
+}
+.ftrMainSec .comp p {
+    margin-bottom: 0;
+}
+.ftrMainSec .collFor h3 {
+    text-decoration: none;
 }
 /* footer section Css */
 /* introduction page css start */
@@ -1942,6 +2048,11 @@ section.cardSection{
 .benefitSec .mainImage{
     position: relative;
 }
+.benefitSec ul li::marker {
+    color: #0058F7;
+    font-size: 1.5rem;
+    vertical-align: bottom;
+}
 .benefitSec .mainImage::before {
     position: absolute;
     content: '';
@@ -2020,7 +2131,7 @@ section.cardSection{
 }
 .benefitSec ul li {
     margin-bottom: 10px;
-    line-height: 1.5em;
+    line-height: 1.3em;
 }
 .benefitSec ul li:last-child{
     margin-bottom: 0;
