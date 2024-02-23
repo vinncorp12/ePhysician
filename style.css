@@ -8,12 +8,14 @@
     --btnColor: #002C7C;
     --labelColor: #313131;
 }
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
 }
 body{
     font-family: 'Poppins', sans-serif;
