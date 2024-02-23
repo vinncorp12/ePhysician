@@ -1369,8 +1369,8 @@ section.ftrCopyrightSec {
     left: 0;
     right: 0;
 }
-.ftrMainSec .comp p {
-    margin-bottom: 0;
+.ftrCopyrightSec .comp p {
+    margin-bottom: 0 !important;
 }
 .ftrMainSec .collFor h3 {
     text-decoration: none;
