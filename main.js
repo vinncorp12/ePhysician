@@ -17,3 +17,5 @@ jQuery(document).ready(function(){
     jQuery(this).addClass("active");
 });
 });
+
+jQuery("nav-menu ").addClass("fixedPosition");
