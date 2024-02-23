@@ -18,4 +18,9 @@ jQuery(document).ready(function(){
 });
 });
 
-jQuery("nav-menu ").addClass("fixedPosition");
+jQuery(document).ready(function() {
+	jQuery(".hamburger").click(function() {
+  jQuery('html').addClass('html-burger-open');
+  jQuery('body').addClass('html-burger-open');
+});
+});

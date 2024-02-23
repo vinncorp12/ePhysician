@@ -8,6 +8,9 @@
     --btnColor: #002C7C;
     --labelColor: #313131;
 }
+html.html-burger-open {
+    overflow: hidden;
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 *{
     margin: 0px;
@@ -759,6 +762,8 @@ a.nav-links-btn:hover{
 .careSec .careImg:hover  img,
 .concludeSec .concludeImage:hover img{
     transform: scale(1.1);
+    border-radius: 12px;
+    max-width: 100%;
 }
 .careSec .careImg:hover .careInnerImage::before{
     transform: rotate(90deg);
@@ -776,10 +781,12 @@ a.nav-links-btn:hover{
 }
 .concludeSec .innerConcludeBlock{
     width: 100%;
+    max-width: 100%;
     overflow: hidden;
     height: auto;
     min-height: 420px;
     transition: .3s;
+    border-radius: 12px !important;
 }
 .mainImage img {
     transition: all .5s ease-in;
