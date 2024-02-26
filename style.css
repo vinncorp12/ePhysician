@@ -129,9 +129,9 @@ a.nav-links-btn:hover{
     .concludeSec img {
         max-width: 370px !important;
     }
-    /* .featureSection {
-        height: 55vh !important;
-    } */
+    .ftrMainSec .collPic::before {
+        right: -50px !important;
+    }
     .benefitSec::before {
         max-width: 390px !important;
     }
@@ -163,6 +163,21 @@ a.nav-links-btn:hover{
 @media(max-width:1024px){
     html.html-burger-open {
         overflow: hidden;
+    }
+    .aboutOfficeIntro .imgIntro::before {
+        right: -20px !important;
+    }
+    .ftrMainSec .collPic::before {
+        right: -20px !important;
+    }
+    .ftrMainSec .collPic {
+        margin-top: 6px !important;
+    }
+    .ftrMainSec li a {
+        font-size: 12px !important;
+    }
+    header.navigation-header row {
+        width: 100%;
     }
     .hamburger{
       display: block;
