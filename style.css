@@ -182,9 +182,27 @@ a.nav-links-btn:hover{
     .hamburger{
       display: block;
     }
+    .aboutOfficeIntro .imgIntro::after {
+        right: -15px !important;
+    }
+    .supportInnerBlock::after {
+        right: -50px !important;
+    }
     .navbar-expand-sm .navbar-nav {
         flex-direction: column;
         justify-content: center;
+    }
+    .supportSec p.card-title {
+        min-height: 120px !important;
+    }
+    .imgMedicalBackground::before {
+        right: -18px !important;
+    }
+    .careSec .careImg .careInnerImage::before {
+        right: -10px !important;
+    }
+    .managementSec .imagePositionCare {
+        min-height: 480px !important;
     }
     .hamburger.active .bar:nth-child(2){
       opacity: 0;
