@@ -208,6 +208,9 @@ a.nav-links-btn:hover{
     }
 }
 @media(max-width:991px){
+    .ftrMainSec .collPic::before {
+        right: 0px !important;
+    }
     .supportSec,
     .innovationSec,
     .databaseSec,
@@ -1005,7 +1008,7 @@ a.nav-links-btn:hover{
     transition: all .5s ease-in-out;
 }
 .functionalitySec .funcImageBlock:hover::before{
-    transform: translate(-5px, 25px);
+    transform: translate(-5px, 20px);
 }
 .functionalitySec .funcImageBlock img:hover {
     transform: translate(-10px, 35px);
@@ -1177,6 +1180,18 @@ a.nav-links-btn:hover{
     background: url(assets/legal-background.webp) no-repeat;
     background-size: cover;
     background-position: center;
+}
+.legalImageLogo img {
+    width: 300px !important;
+    height: 174px !important;
+    object-fit: cover;
+    object-position: top;
+}
+.legalImageLogoSec img{
+    width: 300px !important;
+    height: 70px !important;
+    object-fit: cover;
+    object-position: top;
 }
 .legalSection p{
     padding: 5px 0;
