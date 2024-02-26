@@ -129,7 +129,7 @@ a.nav-links-btn:hover{
         max-width: 370px !important;
     }
     .featureSection {
-        height: 55vh !important;
+        height: 65vh !important;
     }
     .benefitSec::before {
         max-width: 390px !important;
@@ -964,10 +964,18 @@ a.nav-links-btn:hover{
 }
 .aimMainSec .imageBlock img,
 .careSec .careImg img,
-.concludeSec .concludeImage img,
 .imgIntro .imageInnerBlock img {
     transition: all .5s ease-in;
     transform: scale(1);
+    border-radius: 12px;
+}
+.concludeSec .concludeImage img{
+    transform: scale(1);
+    transition: all .5s ease-in;
+    border-radius: 12px;
+}
+.concludeSec .concludeImage:hover img{
+    transform: scale(1.1);
     border-radius: 12px;
 }
 .careSec .careImg .careInnerImage:before,
@@ -993,7 +1001,6 @@ a.nav-links-btn:hover{
 }
 .aimMainSec .imageBlock img:hover,
 .careSec .careImg:hover  img,
-.concludeSec .concludeImage:hover img,
 .imgIntro:hover .imageInnerBlock img{
     transform: scale(1.1);
     border-radius: 12px;
@@ -2316,9 +2323,7 @@ section.adoptTxtBlock{
 .concludeSec img {
     height: 470px;
     width: 100%;
-    max-width: 330px;
-    border-radius: 12px;
-    box-shadow: 20px 17px 17px #0F47AF16;
+    box-shadow: 20px 17px 17px rgba(15, 71, 175, 0.16);
     object-fit: cover;
 }
 .concludeTxtBlock p:last-child {
