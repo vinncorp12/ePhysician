@@ -140,6 +140,12 @@ a.nav-links-btn:hover{
     .functionalitySec .funcImageBlock {
         margin-top: -40px !important;
     }
+    body .aboutOfficeIntro .imgIntro::before {
+        min-height: 760px !important;
+    }
+    body .imgIntro:hover:before {
+        min-height: 720px !important;
+    }
 }
 @media (max-width: 1366px) {
     .mainBanner h1 {
@@ -944,24 +950,10 @@ a.nav-links-btn:hover{
 .creatingDBImg:hover .innerDBImage img{
     transform: translate(20px, 0);
 }
-.aimMainSec .imageBlock{
-    width: 100%;
-    height: auto;
-    min-height: 410px;
-    overflow: hidden;
-    transition: .3s;
-    border-radius: 12px;
-}
-.careSec .innerCareImage{
-    overflow: hidden;
-    height: auto;
-    min-height: 410px;
-    transition: .3s;
-    border-radius: 12px;
-}
 .aimMainSec .imageBlock img,
 .careSec .careImg img,
-.concludeSec .concludeImage img {
+.concludeSec .concludeImage img,
+.imgIntro .imageInnerBlock img {
     transition: all .5s ease-in;
     transform: scale(1);
     border-radius: 12px;
@@ -970,34 +962,29 @@ a.nav-links-btn:hover{
 .benefitSec .benefitImg .innerBenefitBlock:after{
     transition: all .5s ease-in;
 }
-.aimMainSec .imageBlock img:hover,
-.careSec .careImg:hover  img,
-.concludeSec .concludeImage:hover img{
-    transform: scale(1.1);
-    border-radius: 12px;
-}
 .careSec .careImg:hover .careInnerImage::before{
     transform: rotate(90deg);
 }
 .benefitSec .benefitImg:hover .innerBenefitBlock::after{
     transform: rotate(-90deg);
 }
-.benefitSec .minInnerImage {
+.aimMainSec .imageBlock,
+.careSec .innerCareImage,
+.benefitSec .minInnerImage,
+.concludeSec .innerConcludeBlock,
+.aboutOfficeIntro .imageInnerBlock{
     width: 100%;
-    overflow: hidden;
     height: auto;
-    min-height: 410px;
+    overflow: hidden;
     transition: .3s;
     border-radius: 12px;
 }
-.concludeSec .innerConcludeBlock{
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-    height: auto;
-    min-height: 420px;
-    transition: .3s;
-    border-radius: 12px !important;
+.aimMainSec .imageBlock img:hover,
+.careSec .careImg:hover  img,
+.concludeSec .concludeImage:hover img,
+.imgIntro:hover .imageInnerBlock img{
+    transform: scale(1.1);
+    border-radius: 12px;
 }
 .mainImage img {
     transition: all .5s ease-in;
@@ -1022,6 +1009,13 @@ a.nav-links-btn:hover{
 }
 .functionalitySec .funcImageBlock img:hover {
     transform: translate(-10px, 35px);
+}
+.imgIntro,
+.imgIntro::before{
+    transition: all .5s ease-in-out;
+}
+.imgIntro:hover:before {
+    min-height: 650px !important;
 }
 /* Animations Section*/
 /* Navigation Section CSS */
