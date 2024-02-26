@@ -176,7 +176,7 @@ a.nav-links-btn:hover{
     .ftrMainSec li a {
         font-size: 12px !important;
     }
-    header.navigation-header row {
+    header.navigation-header .row {
         width: 100%;
     }
     .hamburger{
