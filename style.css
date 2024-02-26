@@ -613,6 +613,10 @@ a.nav-links-btn:hover{
     .loginSec, mainBanner {
         padding: 1rem !important;
     }
+    .nav-item {
+        margin: 6px 0 !important;
+        line-height: 1.2em !important;
+    }
     /* .careSec .innerCareImage {
         min-height: 350px !important;
     } */
