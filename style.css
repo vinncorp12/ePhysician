@@ -137,6 +137,8 @@ a.nav-links-btn:hover{
     .managementSec lottie-player {
         left: 50px !important;
     }
+    .functionalitySec .funcImageBlock {
+        margin-top: -40px !important;
 }
 @media (max-width: 1366px) {
     .mainBanner h1 {
@@ -489,6 +491,8 @@ a.nav-links-btn:hover{
     .formBlock input::placeholder {
         font-size: 11px;
     }
+    .aboutOfficeIntro .imgIntro::before {
+        min-height: 480px !important;
 }
 /* set banner space on tablet device*/
 @media(min-width:991px){
@@ -500,6 +504,7 @@ a.nav-links-btn:hover{
 /* set banner space on tablet device*/
 /* define custom classes for converting flex row to column*/
 @media(max-width:767px){
+    
     .managementSec h2.headingBlock {
         font-size: 1.3rem !important;
     }
@@ -1007,6 +1012,17 @@ a.nav-links-btn:hover{
 .concludeImage:hover .innerSubBlock:before {
     max-width: 260px !important;
 }
+.functionalitySec .funcImageBlock img,
+.functionalitySec .funcImageBlock::before{
+    transform: translate(1);
+    transition: all .5s ease-in-out;
+}
+.functionalitySec .funcImageBlock:hover::before{
+    transform: translate(-5px, 25px);
+}
+.functionalitySec .funcImageBlock img:hover {
+    transform: translate(-10px, 35px);
+}
 /* Animations Section*/
 /* Navigation Section CSS */
 /* Main Page Banner Section CSS */
@@ -1355,7 +1371,7 @@ section.ftrCopyrightSec {
     z-index: 1;
     background: url(assets/background-doctor.webp) no-repeat;
     bottom: -25px;
-    right: -90px;
+    right: -70px;
     background-size: cover;
 }
 .ftrMainSec .collFor h3 {
