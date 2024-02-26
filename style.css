@@ -85,7 +85,7 @@ nav.navbar.navbar-expand-sm {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease;
     transition: all 0.5s ease;
-    background-color: #001b58;;
+    background-color: #001b58;
 }
 header.navigation-header {
     position: absolute;
@@ -139,6 +139,7 @@ a.nav-links-btn:hover{
     }
     .functionalitySec .funcImageBlock {
         margin-top: -40px !important;
+    }
 }
 @media (max-width: 1366px) {
     .mainBanner h1 {
@@ -201,7 +202,6 @@ a.nav-links-btn:hover{
     }
 }
 @media(max-width:991px){
-    
     .supportSec,
     .innovationSec,
     .databaseSec,
@@ -493,6 +493,7 @@ a.nav-links-btn:hover{
     }
     .aboutOfficeIntro .imgIntro::before {
         min-height: 480px !important;
+    }
 }
 /* set banner space on tablet device*/
 @media(min-width:991px){
@@ -504,7 +505,6 @@ a.nav-links-btn:hover{
 /* set banner space on tablet device*/
 /* define custom classes for converting flex row to column*/
 @media(max-width:767px){
-    
     .managementSec h2.headingBlock {
         font-size: 1.3rem !important;
     }
@@ -2325,5 +2325,3 @@ section.adoptTxtBlock{
 }
 /* conclude section css */
 /* chest pain start css */
-
-
