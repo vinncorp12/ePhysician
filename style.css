@@ -147,6 +147,12 @@ a.nav-links-btn:hover{
     body .imgIntro:hover:before {
         min-height: 720px !important;
     }
+    .imgMedicalBanner::before {
+        width: 160px !important;
+        height: 150px !important;
+        top: -163px !important;
+        left: 0px !important;
+    }
 }
 
 @media (max-width: 1366px) {
@@ -616,6 +622,9 @@ a.nav-links-btn:hover{
     .nav-item {
         margin: 6px 0 !important;
         line-height: 1.2em !important;
+    }
+    input::placeholder {
+        font-size: 0.51rem !important;
     }
     /* .careSec .innerCareImage {
         min-height: 350px !important;
