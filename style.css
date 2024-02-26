@@ -211,6 +211,15 @@ a.nav-links-btn:hover{
     .ftrMainSec .collPic::before {
         right: 0px !important;
     }
+    .legalSection .legalImageLogo img {
+        height: 110px !important;
+    }
+    .legalSection .legalImageLogoSec img {
+        height: 40px !important;
+    }
+    .legalSection .legalImage {
+        gap: 10px !important;
+    }
     .supportSec,
     .innovationSec,
     .databaseSec,
@@ -807,9 +816,9 @@ a.nav-links-btn:hover{
     .legalSection p{
         padding: 0 !important;
     }
-    .legalSection img {
+    /* .legalSection img {
         width: 70%;
-    }
+    } */
     .financeSection p {
         margin: 0;
     }
@@ -1134,11 +1143,12 @@ a.nav-links-btn:hover{
 /* Main Page About Section CSS */
 /* Main Page Biotestical Section CSS */
 .biotesticalSection {
-    height: 60vh;
+    height: auto;
+    min-height: 60vh;
     width: 100%;
-    background: url(assets/biotestical-image.webp) no-repeat;
+    background: url(assets/biostatiscalAnalysis-01-Background.webp) no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: top center;
     background-attachment: fixed;
 }
 .biotesticalSection .innerBlock{
@@ -1181,17 +1191,16 @@ a.nav-links-btn:hover{
     background-size: cover;
     background-position: center;
 }
-.legalImageLogo img {
-    width: 300px !important;
-    height: 174px !important;
+.legalSection .legalImageLogo img,
+.legalSection .legalImageLogoSec img {
     object-fit: cover;
     object-position: top;
 }
-.legalImageLogoSec img{
-    width: 300px !important;
-    height: 70px !important;
-    object-fit: cover;
-    object-position: top;
+.legalSection .legalImageLogo img{
+    height: 130px;
+}
+.legalSection .legalImageLogoSec img{
+    height: 50px;
 }
 .legalSection p{
     padding: 5px 0;
