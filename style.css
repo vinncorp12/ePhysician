@@ -1371,6 +1371,10 @@ section.financeSection::before {
     text-underline-offset: 10px;
     text-decoration-color: #0058F7;
     font-weight: 600;
+    -webkit-text-decoration-line:  underline !important;
+    -webkit-text-decoration-color: #0058F7 !important;
+    -webkit-text-decoration-style: solid !important;
+    -webkit-text-decoration-thickness: 2px !important;
 }
 .ftrMainSec .collFor ul {
     column-count: 2;
