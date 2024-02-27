@@ -2086,7 +2086,7 @@ section.cardSection{
 }
 .supportInnerBlock::after {
     background: url(assets/offerBeforImg.png);
-    right: -55px;
+    right: -40px;
     top: 30px;
 }
 .supportSec .chestPara p {
