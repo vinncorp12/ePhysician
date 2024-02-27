@@ -1623,6 +1623,9 @@ section.featureSection .imageText img {
 .loginSec{
     background: url(assets/tablet-login-concept-illustration.webp) no-repeat;
 }
+.loginSec i#togglePassword::before {
+    margin-left: -30px;
+}
 .loginSec .mainBanner h2{
     color: var(--headingColor);
     font-weight: 700;
@@ -1649,7 +1652,7 @@ section.featureSection .imageText img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 .loginSec .mainBanner form input:last-child{
     margin-bottom: 0;
