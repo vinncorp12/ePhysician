@@ -1364,6 +1364,11 @@ section.financeSection::before {
 .ftrMainSec{
     padding-top: 2rem;
 }
+.ftrMainSec h2{
+    color: var(--headingColor);
+    font-size: 1rem;
+    font-weight: 600;
+}
 .ftrMainSec h3 {
     color: var(--headingColor);
     font-size: 1rem;
@@ -1371,7 +1376,7 @@ section.financeSection::before {
     text-underline-offset: 10px;
     text-decoration-color: #0058F7;
     font-weight: 600;
-    -webkit-text-decoration-line:  underline !important;
+    -webkit-text-decoration-line: 2px underline !important;
     -webkit-text-decoration-color: #0058F7 !important;
     -webkit-text-decoration-style: solid !important;
     -webkit-text-decoration-thickness: 2px !important;
