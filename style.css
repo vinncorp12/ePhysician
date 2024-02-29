@@ -1147,6 +1147,17 @@ a.nav-links-btn:hover{
     font-weight: 300;
     padding: 30px 0;
 }
+.home i.fa-arrow-right {
+    transform: translate(0%, 0);
+    font-weight: 400 !important;
+    transition: all .3s ease-in-out;
+    visibility: hidden;
+}
+.home .button:hover i.fa-arrow-right {
+    transform: translate(30%, 0%);
+    visibility: visible;
+}
+
 .home a.button{
     background-color: var(--white);
     color: var(--darkBlue);
