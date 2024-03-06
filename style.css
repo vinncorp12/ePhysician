@@ -167,6 +167,9 @@ a.nav-links-btn:hover{
     }
 }
 @media(max-width:1024px){
+    .bannerImg::before {
+        background-size: cover !important;
+    }
     html.html-burger-open {
         overflow: hidden;
     }
