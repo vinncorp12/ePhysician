@@ -13,8 +13,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-}
-html {
     scroll-behavior: smooth;
 }
 body{
@@ -47,11 +45,7 @@ p, h1, h2, h3, h4, h5{
 .nav-branding{
     font-size: 2rem;
 }
-nav.navbar.navbar-expand-sm {
-    background: #ffffff81;
-    box-shadow: 4px 9px 50px #00000029;
-    min-height: 85px;
-}
+
 .nav-menu{
     display: flex;
     align-items: center;
@@ -94,6 +88,9 @@ header.navigation-header {
     left: 0;
     right: 0;
     width: 100%;
+    background: rgba(255, 255, 255, 0.81);
+    box-shadow: 4px 9px 50px rgba(0, 0, 0, 0.29);
+    min-height: 85px;
 }
 a.nav-links-btn {
     background-image: linear-gradient(90deg, #0058F7, #002C7C);
@@ -115,6 +112,9 @@ a.nav-links-btn:hover{
 }
 .setMainCol{
     flex-wrap: wrap;
+}
+footer.footerSec ul {
+    margin-bottom: 0;
 }
 /* Media Query  */
 
@@ -154,7 +154,6 @@ a.nav-links-btn:hover{
         left: 0px !important;
     }
 }
-
 @media (max-width: 1366px) {
     .mainBanner h1 {
         font-size: 2.875rem !important;
@@ -164,6 +163,15 @@ a.nav-links-btn:hover{
     }
     .nav-menu{
         gap: 10px !important;
+    }
+    .ftrMainSec .collPic {
+        margin-top: -110px !important;
+    }
+    .ftrMainSec .collOne, .ftrMainSec .collSec, .ftrMainSec .collThr{
+        padding-top: 1rem !important;
+    }
+    .ftrMainSec .ftrMenu ul li {
+        margin: 0 0 5px 0 !important;
     }
 }
 @media(max-width:1024px){
@@ -180,10 +188,14 @@ a.nav-links-btn:hover{
         right: -20px !important;
     }
     .ftrMainSec .collPic {
-        margin-top: 6px !important;
+        margin-top: -60px !important;
     }
     .ftrMainSec li a {
         font-size: 12px !important;
+    }
+    
+    .ftrMainSec .ftrMenu ul li {
+        margin: 0 0 3px 0 !important;
     }
     header.navigation-header .row {
         width: 100%;
@@ -249,6 +261,11 @@ a.nav-links-btn:hover{
     }
     .mainBanner h1 {
         font-size: 2.25rem !important;
+    }
+}
+@media (max-width: 991px) and (min-width: 567px){
+    .ftrMainSec .collPic{
+        display: none;
     }
 }
 @media(max-width:991px){
@@ -389,7 +406,7 @@ a.nav-links-btn:hover{
     body .aimMainSec::before {
         min-height: 350px !important;
     }
-    nav.navbar.navbar-expand-sm {
+    header.navigation-header {
         min-height: 60px !important;
     }
     .featureSection .imageText {
@@ -456,15 +473,14 @@ a.nav-links-btn:hover{
         padding: 0 !important;
         margin-bottom: 2px !important;
     }
-    .ftrMainSec .collSec, .ftrMainSec .collThr, .ftrMainSec .collFor{
+    .ftrMainSec .collSec, .ftrMainSec .collThr, .ftrMainSec .collOne{
         padding-top: 1rem !important;
     }
     .ftrMainSec .ftrMenu ul li {
         margin: 5px 0 !important;
     }
-    .ftrImgBlock img
-    {
-        width: 80%;
+    .ftrImgBlock img{
+        width: 80% !important;
     }
     .ftrMainSec .collPic img{
         width: 50%;
@@ -573,12 +589,12 @@ a.nav-links-btn:hover{
     .managementSec h2.headingBlock {
         font-size: 1.3rem !important;
     }
-    .ftrMainSec .collFor h3::before,
+    .ftrMainSec .collOne h3::before,
     .ftrMainSec .collSec h3::before,
     .ftrMainSec .collThr h3::before{
         margin: auto;
     }
-    .ftrMainSec .collFor h3::before {
+    .ftrMainSec .collThr h3::before {
         width: 112px !important;
     }
     .managementTxtBlock,
@@ -775,8 +791,8 @@ a.nav-links-btn:hover{
         overflow: hidden !important;
         background-size: cover !important;
     }
-    nav.navbar.navbar-expand-sm {
-        min-height: 70px;
+    .ftrMainSec .collPic {
+        margin-top: 0px !important;
     }
     .aboutOfficeIntro .imgIntro::before {
         width: 80px !important;
@@ -839,7 +855,10 @@ a.nav-links-btn:hover{
         font-size: 15px !important;
         width: 35px !important;
     }
-    .ftrMainSec .collFor ul{
+    .ftrImgBlock img {
+        width: 60% !important;
+    }
+    .ftrMainSec .collThr ul{
         column-count: unset !important;
     }
     .ftrMainSec .socialLinksInfo{
@@ -1379,7 +1398,8 @@ section.financeSection::before {
 /* footer section Css */
 
 .ftrMainSec{
-    padding-top: 2rem;
+    /* justify-content: center; */
+    align-items: flex-start;
 }
 .ftrMainSec h2{
     color: var(--headingColor);
@@ -1399,7 +1419,7 @@ section.financeSection::before {
     -webkit-text-decoration-style: solid !important;
     -webkit-text-decoration-thickness: 2px !important;
 }
-.ftrMainSec .collFor ul {
+.ftrMainSec .collThr ul {
     column-count: 2;
 }
 .ftrMainSec .collFor ul li:first-of-type {
@@ -1419,11 +1439,8 @@ section.financeSection::before {
 footer.footerSec .ftrHeadingSec {
     margin-bottom: 20px;
 }
-.ftrMainSec .collSec, .ftrMainSec .collThr, .ftrMainSec .collFor {
-    padding-top: 3em;
-}
-.ftrMainSec .collOne {
-    margin-top: -20px;
+.ftrMainSec .collOne, .ftrMainSec .collSec, .ftrMainSec .collThr {
+    padding-top: 2em;
 }
 .ftrMainSec .ftrMenu ul li {
     margin: 0 0 10px 0;
@@ -1438,36 +1455,18 @@ footer.footerSec .ftrHeadingSec {
     color: var(--darkBlue);
     text-decoration: none;
 }
-.ftrMainSec .collOne .social-link ul {
-    display: flex;
-    gap: 12px;
-}
-.ftrMainSec .collOne .social-link ul li a{
-    color: #fff !important;
-}
-.ftrMainSec .collOne .social-link i.fa {
-    padding: 10px;
-    font-size: 15px;
-    width: 38px;
-    text-align: center;
-    background: #003BA5;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    box-shadow: 5px 2px 7px #0f47af16;
-    color: #fff;
-}
 section.ftrCopyrightSec {
     background-image: linear-gradient(90deg, #0542CD, #001952);
     box-shadow: 0px -14px 16px #0f47af16;
     border-radius: 10px 10px 0 0;
 }
-.ftrMainSec .collFor{
+.ftrMainSec .collThr{
     position: relative;
     z-index: 2;
 }
 .ftrMainSec .collPic {
     position: relative;
-    margin-top: -54px;
+    margin-top: -125px;
 }
 .ftrMainSec .collPic img{
     position: relative;
@@ -1484,12 +1483,12 @@ section.ftrCopyrightSec {
     right: -50px;
     background-size: cover;
 }
-.ftrMainSec .collFor h3,
+.ftrMainSec .collOne h3,
 .ftrMainSec .collThr h3,
 .ftrMainSec .collSec h3 {
     position: relative;
 }
-.ftrMainSec .collFor h3::before,
+.ftrMainSec .collOne h3::before,
 .ftrMainSec .collSec h3::before,
 .ftrMainSec .collThr h3::before {
     content: '';
@@ -1501,16 +1500,15 @@ section.ftrCopyrightSec {
     left: 0;
     right: 0;    
 }
-.ftrMainSec .collSec h3::before{
+.ftrMainSec .collOne h3::before{
     width: 75px;
 }
-.ftrMainSec .collThr h3::before{
+.ftrMainSec .collSec h3::before{
     width: 85px;
 }
-.ftrMainSec .collFor h3::before{
+.ftrMainSec .collThr h3::before{
     width: 300px;
 }
-
 .ftrCopyrightSec .comp p {
     margin-bottom: 0 !important;
 }
