@@ -956,6 +956,13 @@ footer.footerSec ul {
     transition: all 0.375s ease-in-out;
     transform: translate(0,0);
 }
+.adoptSec .imgIcon,
+.adoptSec .imgIcon:before{
+    transition: all 0.375 ease-out;
+}
+.adoptSec:hover .imgIcon:before {
+    transform: rotate(0deg);
+}
 .imgSection:hover:before {
     transform: translate(10px, -5px);
 }
@@ -2316,6 +2323,7 @@ section.resultSec {
     background-size: cover;
     flex-wrap: wrap;
 }
+
 .adoptSec p {
     line-height: 1.5em;
 }
