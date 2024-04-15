@@ -583,6 +583,9 @@ footer.footerSec ul {
 /* set banner space on tablet device*/
 /* define custom classes for converting flex row to column*/
 @media(max-width:767px){
+    .paraBanner{
+        padding: 0 !important;
+    }
     header.navigation-header .row {
         width: auto !important;
     }
