@@ -269,6 +269,16 @@ footer.footerSec ul {
     }
 }
 @media(max-width:991px){
+    .conclusionBlock h5{
+        font-size: 1rem !important;
+    }
+    .conclusionBlock ul{
+        margin-bottom: 2px;
+    }
+    .conclusionBlock li{
+        font-size: .9rem;
+        line-height: 22px;
+    }
     .ftrMainSec .collPic::before {
         right: 0px !important;
     }
@@ -583,6 +593,9 @@ footer.footerSec ul {
 /* set banner space on tablet device*/
 /* define custom classes for converting flex row to column*/
 @media(max-width:767px){
+    .conclusionBlock ul {
+        margin-bottom: 22px !important;
+    }
     .paraBanner{
         padding: 0 !important;
     }
