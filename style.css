@@ -740,8 +740,12 @@ footer.footerSec ul {
 /* set banner space on tablet device*/
 /* define custom classes for converting flex row to column*/
 @media (max-width: 767px) {
+  .callInnerSection {
+    flex-direction: column !important;
+    padding: 30px !important;
+  }
   .comp {
-    padding: 15px 0;
+    padding: 10px 0 20px;
   }
   .progress-wrap {
     position: fixed;
@@ -1838,6 +1842,8 @@ section.dataBlock .innerSection {
 /* features section  css */
 .featureSection {
   background-image: linear-gradient(239deg, #0058f7, #002c7c);
+  background-size: cover !important;
+  background-position: center !important;
 }
 .featureSection h2 {
   width: 550px;
@@ -1855,6 +1861,9 @@ section.featureSection .imageText img {
   background: #fff;
   padding: 7px;
   border-radius: 7px;
+}
+.featureSection .imageText p {
+  height: 88px;
 }
 /* features section  css */
 /* functional section  css */
