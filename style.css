@@ -121,6 +121,9 @@ body {
 .footerSec {
   background: #fff;
 }
+.hamburger.active .bar {
+  background: #fff !important;
+}
 ul.navbar-nav.nav-menu.active {
   overflow: hidden;
   height: 100%;
@@ -196,7 +199,7 @@ header.navigation-header {
   padding: 15px 10px;
 }
 header.navigation-header .logo,
-header.navigation-header .nav-menu {
+header.navigation-header .header-wrap {
   transition: 0.7s transform ease;
   transform: scale(1);
 }
@@ -207,13 +210,13 @@ header.navigation-header {
 header.navigation-header .logo {
   transform-origin: left center;
 }
-header.navigation-header .nav-menu {
+header.navigation-header .header-wrap {
   transform-origin: right center;
 }
 header.navigation-header.fixed .logo {
   transform: scale(0.96);
 }
-header.navigation-header.fixed .nav-menu {
+header.navigation-header.fixed .header-wrap {
   transform: scale(0.96);
 }
 header.navigation-header.fixed {
@@ -306,6 +309,12 @@ footer.footerSec ul {
   }
 }
 @media (max-width: 1024px) {
+  header.navigation-header .header-wrap {
+    transform: unset !important;
+  }
+  .callInnerSection p {
+    width: 100% !important;
+  }
   .bannerImg::before {
     background-size: cover !important;
   }
@@ -731,9 +740,6 @@ footer.footerSec ul {
 /* set banner space on tablet device*/
 /* define custom classes for converting flex row to column*/
 @media (max-width: 767px) {
-  .callInnerSection p {
-    width: 100% !important;
-  }
   .progress-wrap {
     position: fixed;
     right: 25px;
@@ -741,6 +747,7 @@ footer.footerSec ul {
     height: 30px;
     width: 30px;
   }
+
   .progress-wrap::before,
   .progress-wrap::after {
     line-height: 30px;
