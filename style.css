@@ -558,7 +558,7 @@ footer.footerSec ul {
     min-height: 350px !important;
   }
   header.navigation-header {
-    min-height: 60px !important;
+    padding: 10px !important;
   }
   .featureSection .imageText {
     margin-bottom: 20px;
