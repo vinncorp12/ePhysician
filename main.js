@@ -70,7 +70,7 @@ jQuery(document).ready(function () {
     progressPath.style.strokeDashoffset = progress;
   };
   updateProgress();
-  $(window).scroll(updateProgress);
+  jQuery(window).scroll(updateProgress);
   var offset = 50;
   var duration = 550;
   jQuery(window).on("scroll", function () {
