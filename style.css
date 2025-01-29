@@ -740,6 +740,9 @@ footer.footerSec ul {
 /* set banner space on tablet device*/
 /* define custom classes for converting flex row to column*/
 @media (max-width: 767px) {
+  .comp {
+    padding: 0 0 10px;
+  }
   .progress-wrap {
     position: fixed;
     right: 25px;
