@@ -86,3 +86,11 @@ jQuery(document).ready(function () {
     return false;
   });
 });
+
+if (jQuery("html:not(.mobile-user-agent)")) {
+  jQuery(".video-preview-image")
+    .unbind("click")
+    .bind("click", function () {
+      jQuery(this).hide();
+    });
+}
