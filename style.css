@@ -158,11 +158,11 @@ h5 {
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 .nav-item a {
   color: var(--lightblack);
-  font-size: 1.125rem;
+  font-size: 1.025rem;
   line-height: 1.5em;
 }
 .nav-link {
@@ -290,11 +290,42 @@ footer.footerSec ul {
   }
 }
 @media (max-width: 1366px) {
+  .publicImgSection::before {
+    height: 360px !important;
+    left: -30px;
+    bottom: 0px;
+  }
+  .publicBlock .contentWidget {
+    width: 560px !important;
+  }
+  .appSec h3 {
+    font-size: 20px !important;
+  }
+  section.adminSec .txtBlock {
+    width: 700px !important;
+  }
+  .adminInnerBlock {
+    align-items: center !important;
+  }
+  .adminSec p {
+    margin-bottom: 14px;
+  }
+  .appSec {
+    background-size: unset !important;
+  }
   .mainBanner h1 {
     font-size: 2.1rem !important;
   }
   .nav-menu a.nav-link {
-    font-size: 1rem !important;
+    font-size: 0.85rem !important;
+  }
+  .publicBlock img {
+    height: 380px !important;
+    padding-left: 50px;
+  }
+  .adminSec video,
+  .adminSec .video-preview-image {
+    height: 210px !important;
   }
   .nav-menu {
     gap: 10px !important;
@@ -417,6 +448,13 @@ footer.footerSec ul {
   }
 }
 @media (max-width: 991px) {
+  .adminInnerBlock {
+    flex-wrap: wrap !important;
+  }
+  section.adminSec .txtBlock,
+  .appChildSec p.card-title {
+    width: 100% !important;
+  }
   .conclusionBlock h5 {
     font-size: 1rem !important;
   }
@@ -748,6 +786,10 @@ footer.footerSec ul {
 /* set banner space on tablet device*/
 /* define custom classes for converting flex row to column*/
 @media (max-width: 767px) {
+  .introduceSec h3,
+  .benefitHero p {
+    width: 100% !important;
+  }
   .callInnerSection {
     flex-direction: column !important;
     padding: 30px !important;
@@ -2435,10 +2477,33 @@ section.cardSection {
 .supportSec {
   position: relative;
 }
-.supportSec {
+.supportSec,
+.appSec {
   background: url(assets/applicationBack.png) no-repeat;
-  background-size: cover !important;
+  /* background-size: cover !important; */
   background-position: top center;
+}
+.appSec {
+  background-position: center !important;
+}
+.applicationSec .applicationInnerBlock::before,
+.applicationSec .applicationInnerBlock::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-size: cover !important;
+  width: 104px;
+  height: 100px;
+}
+.applicationSec .applicationInnerBlock::before {
+  background: url(assets/offerBeforImg.png);
+  left: -10px;
+  bottom: -30px;
+}
+.applicationSec .applicationInnerBlock::after {
+  background: url(assets/offerBeforImg.png);
+  right: -40px;
+  top: 30px;
 }
 /* care sec css */
 .careSec {
@@ -2748,7 +2813,8 @@ section.adoptTxtBlock {
 /* introduce section start */
 .introduceSec .videoWrapper,
 .adminSec .videoWrapper,
-.systemBlock .videoWrapper {
+.systemBlock .videoWrapper,
+.appChildSec .videoWrapper {
   position: relative;
   /* padding-bottom: 56.25%; */
   /* 16:9 */
@@ -2756,7 +2822,8 @@ section.adoptTxtBlock {
 }
 .introduceSec .videoWrapper iframe,
 .adminSec .videoWrapper iframe,
-.systemBlock .videoWrapper iframe {
+.systemBlock .videoWrapper iframe,
+.appChildSec .videoWrapper iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -2765,7 +2832,8 @@ section.adoptTxtBlock {
 }
 .introduceSec .video-preview-image,
 .adminSec .video-preview-image,
-.systemBlock .video-preview-image {
+.systemBlock .video-preview-image,
+.appChildSec .video-preview-image {
   width: 100%;
 }
 .introduceSec .video-preview-image {
@@ -2777,9 +2845,13 @@ section.adoptTxtBlock {
 .systemBlock .video-preview-image {
   height: 370px;
 }
+.appChildSec .video-preview-image {
+  height: 220px;
+}
 .introduceSec .video-preview-image,
 .adminSec .video-preview-image,
-.systemBlock .video-preview-image {
+.systemBlock .video-preview-image,
+.appChildSec .video-preview-image {
   position: absolute;
   top: 0;
   left: 0;
@@ -2831,12 +2903,43 @@ section.adminSec .txtBlock {
 }
 .adminInnerBlock {
   justify-content: space-between;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  gap: 30px;
 }
 /* admin section end */
 /* application sec start */
-.applicationSec h3 {
+.appSec h3 {
   color: #003ba5;
   font-weight: 700;
+  font-size: 24px;
+}
+.appChildSec {
+  gap: 45px;
+  justify-content: space-between;
+}
+.customCard {
+  width: calc(33% - 30px);
+  flex-grow: 1;
+}
+.appChildSec .card {
+  border: 1px solid #ff10;
+  border-radius: 12px;
+  filter: drop-shadow(35px 11px 50px rgba(15, 71, 175, 0.2));
+  overflow: hidden;
+}
+.appChildSec .card-body {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.appChildSec p.card-title {
+  width: 300px;
+}
+.appInnerBlock {
+  gap: 20px;
 }
 /* application sec end */
 .systemBlock p {
@@ -2851,4 +2954,29 @@ section.adminSec .txtBlock {
   gap: 50px;
   overflow: hidden;
 }
+.publicBlock img {
+  height: 530px;
+  padding-left: 50px;
+  object-fit: cover;
+  padding-bottom: 30px;
+}
+.publicBlock .contentWidget {
+  width: 610px;
+}
+.publicImgSection {
+  position: relative;
+}
+.publicImgSection::before {
+  content: "";
+  position: absolute;
+  background: url(assets/rectangle_33615.webp) no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  width: 100%;
+  height: 500px;
+  left: -30px;
+  bottom: 0px;
+}
+
 /* benefit page section end*/
