@@ -1386,7 +1386,7 @@ footer.footerSec ul {
   margin-top: 100px;
 }
 .bannerBlock {
-  background: url(/ePhysician/assets/images/Home-Page-Main-Banner.webp)
+  background: url(/ePhysician/ePhysician/assets/images/Home-Page-Main-Banner.webp)
     no-repeat;
   background-size: cover;
   background-position: center;
@@ -1396,7 +1396,8 @@ footer.footerSec ul {
 }
 .bannerImg::before {
   content: "";
-  background: url(/ePhysician/assets/images/banner-before-image.webp) no-repeat;
+  background: url(/ePhysician/ePhysician/assets/images/banner-before-image.webp)
+    no-repeat;
   position: absolute;
   top: 0;
   left: 0;
@@ -1444,7 +1445,7 @@ footer.footerSec ul {
 .aboutBlock {
   min-height: 60vh;
   width: 100%;
-  background: url(/assets/images/about-banner.webp) no-repeat;
+  background: url(/ePhysician/assets/images/about-banner.webp) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -1498,7 +1499,7 @@ footer.footerSec ul {
   height: auto;
   min-height: 60vh;
   width: 100%;
-  background: url(/assets/images/biostatiscalAnalysis-01-Background.webp)
+  background: url(/ePhysician/assets/images/biostatiscalAnalysis-01-Background.webp)
     no-repeat;
   background-size: cover;
   background-position: top center;
@@ -1506,7 +1507,7 @@ footer.footerSec ul {
 }
 .biotesticalSection .innerBlock {
   width: 100%;
-  background: url(/assets/images/innerBlock.webp) no-repeat;
+  background: url(/ePhysician/assets/images/innerBlock.webp) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -1542,7 +1543,7 @@ footer.footerSec ul {
 /* Main Page legal Section CSS */
 .legalSection {
   width: 100%;
-  background: url(/assets/images/legal-background.webp) no-repeat;
+  background: url(/ePhysician/assets/images/legal-background.webp) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -1625,7 +1626,7 @@ section.financeSection {
   width: 100px;
   height: 100px;
   z-index: 1;
-  background: url(/assets/images/circle.webp) no-repeat;
+  background: url(/ePhysician/assets/images/circle.webp) no-repeat;
   bottom: 20px;
   right: 20px;
   background-size: contain;
@@ -1644,7 +1645,7 @@ section.financeSection::before {
 /* Main Page Advisory Section CSS */
 .advisorySec {
   width: 100%;
-  background: url(/assets/images/advisory-background.webp) no-repeat;
+  background: url(/ePhysician/assets/images/advisory-background.webp) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -1734,7 +1735,7 @@ section.ftrCopyrightSec {
   width: 370px;
   height: 300px;
   z-index: 1;
-  background: url(/assets/images/background-doctor.webp) no-repeat;
+  background: url(/ePhysician/assets/images/background-doctor.webp) no-repeat;
   bottom: -25px;
   right: -50px;
   background-size: cover;
@@ -1774,12 +1775,12 @@ section.ftrCopyrightSec {
 /* footer section Css */
 /* home page new css start */
 .homeNew {
-  background: url(/assets/images/home-banner-new.webp) no-repeat;
+  background: url(/ePhysician/assets/images/home-banner-new.webp) no-repeat;
   background-position: center;
   background-size: cover;
 }
 .dataBlock {
-  background: url(/assets/images/Mask\ Group\ 3.webp) no-repeat;
+  background: url(/ePhysician/assets/images/Mask\ Group\ 3.webp) no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -1796,14 +1797,14 @@ section.dataBlock .innerSection {
   gap: 50px;
 }
 .whatWeDoSec {
-  background: url(/assets/images/background.webp) no-repeat;
+  background: url(/ePhysician/assets/images/background.webp) no-repeat;
 }
 .whyWeDidSec,
 .callBlock {
   background-color: #f5f8ff;
 }
 .callInnerSection {
-  background: url(/assets/images/call-background.webp) repeat;
+  background: url(/ePhysician/assets/images/call-background.webp) repeat;
   background-position: center;
   background-size: cover;
   gap: 30px;
@@ -1833,7 +1834,7 @@ section.dataBlock .innerSection {
 /* introduction page css start */
 /* banner css */
 .introductionSec {
-  background: url(/assets/images/biotechnology-specialist-laboratory-conducting-experiments.webp)
+  background: url(/ePhysician/assets/images/biotechnology-specialist-laboratory-conducting-experiments.webp)
     no-repeat;
   background-size: cover !important;
   background-position: center !important;
@@ -1885,7 +1886,7 @@ section.dataBlock .innerSection {
   width: 135px;
   height: 135px;
   z-index: 2;
-  background: url(/assets/images/imagerBefore.webp) no-repeat;
+  background: url(/ePhysician/assets/images/imagerBefore.webp) no-repeat;
   bottom: -20px;
   right: -33px;
   background-size: contain;
@@ -1921,7 +1922,7 @@ section.featureSection .imageText img {
 /* functional section  css */
 .functionalitySec {
   width: 100%;
-  background: url(/assets/images/imagetext.webp) no-repeat;
+  background: url(/ePhysician/assets/images/imagetext.webp) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -1982,7 +1983,7 @@ section.featureSection .imageText img {
 /* introduction page css end */
 /* login page css start */
 .loginSec {
-  background: url(/assets/images/tablet-login-concept-illustration.webp)
+  background: url(/ePhysician/assets/images/tablet-login-concept-illustration.webp)
     no-repeat;
 }
 .loginSec i#togglePassword::before {
@@ -2036,7 +2037,7 @@ section.featureSection .imageText img {
 /* contact us page css start */
 /* contact page banner css */
 .contactSec {
-  background: url(/assets/images/male-customer-support-worker-computer-office-with-available-table-space.webp)
+  background: url(/ePhysician/assets/images/male-customer-support-worker-computer-office-with-available-table-space.webp)
     no-repeat;
 }
 /* contcat page form css */
@@ -2081,7 +2082,7 @@ section.featureSection .imageText img {
 
 /* covid page form css */
 .covidSec {
-  background: url(/assets/images/immune-response-virus-macro-photo.webp)
+  background: url(/ePhysician/assets/images/immune-response-virus-macro-photo.webp)
     no-repeat;
 }
 /* the aim form css */
@@ -2113,7 +2114,8 @@ section.aimMainSec .aimSec,
 }
 .aimSec {
   gap: 40px;
-  background: url(/assets/images/newspaper-covid-19-titles-money.webp) no-repeat;
+  background: url(/ePhysician/assets/images/newspaper-covid-19-titles-money.webp)
+    no-repeat;
   background-size: cover;
   position: relative;
   z-index: 2;
@@ -2179,7 +2181,7 @@ section.aimMainSec .aimSec,
   height: auto;
 }
 .agencyBlock {
-  background: url(/assets/images/agencsParaBlock.png) no-repeat;
+  background: url(/ePhysician/assets/images/agencsParaBlock.png) no-repeat;
   background-size: cover;
   height: auto;
   background-position: -300px 0px;
@@ -2189,7 +2191,7 @@ section.aimMainSec .aimSec,
 /* machine css */
 .machineBlock {
   position: relative;
-  background: url(/assets/images/machine-Learning.png) no-repeat;
+  background: url(/ePhysician/assets/images/machine-Learning.png) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
@@ -2222,7 +2224,7 @@ section.aimMainSec .aimSec,
 /* taskBlock Css */
 .taskBlock {
   position: relative;
-  background: url(/assets/images/biotechnology-specialist-laboratory-conducting-experiments-task-hand.webp)
+  background: url(/ePhysician/assets/images/biotechnology-specialist-laboratory-conducting-experiments-task-hand.webp)
     no-repeat;
   background-size: cover;
   flex-wrap: wrap;
@@ -2323,7 +2325,7 @@ section.cardSection {
   background-size: cover !important;
 }
 .imgMedicine::before {
-  background: url(/assets/images/solutionImg.png) no-repeat;
+  background: url(/ePhysician/assets/images/solutionImg.png) no-repeat;
   width: 80px;
   height: 80px;
   top: -44px;
@@ -2356,7 +2358,7 @@ section.cardSection {
   right: 10px;
 }
 .imgMedicalBackground::before {
-  background: url(/assets/images/medicalBackground.png) no-repeat;
+  background: url(/ePhysician/assets/images/medicalBackground.png) no-repeat;
   width: 80px;
   height: 80px;
   bottom: -36px;
@@ -2364,7 +2366,7 @@ section.cardSection {
   z-index: 0 !important;
 }
 .imgSpinal::before {
-  background: url(/assets/images/circleBackend.png) no-repeat;
+  background: url(/ePhysician/assets/images/circleBackend.png) no-repeat;
   width: 150px;
   height: 150px;
   bottom: -65px;
@@ -2374,7 +2376,7 @@ section.cardSection {
 /* solutionSec css */
 /* summary css */
 .summarySec {
-  background: url(/assets/images/summaryBack.png) no-repeat;
+  background: url(/ePhysician/assets/images/summaryBack.png) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -2384,7 +2386,7 @@ section.cardSection {
 /* chest pain start css */
 /* bannerSection Css */
 .chestPainSec {
-  background: url(/assets/images/female-doctor-with-patient-who-is-complaining-chest-pain-during-coronavirus-epidemic-banner.png)
+  background: url(/ePhysician/assets/images/female-doctor-with-patient-who-is-complaining-chest-pain-during-coronavirus-epidemic-banner.png)
     no-repeat;
 }
 /* bannerSection Css */
@@ -2454,12 +2456,12 @@ section.cardSection {
   height: 100px;
 }
 .supportInnerBlock::before {
-  background: url(/assets/images/offerBeforImg.png);
+  background: url(/ePhysician/assets/images/offerBeforImg.png);
   left: -10px;
   bottom: -30px;
 }
 .supportInnerBlock::after {
-  background: url(/assets/images/offerBeforImg.png);
+  background: url(/ePhysician/assets/images/offerBeforImg.png);
   right: -40px;
   top: 30px;
 }
@@ -2483,7 +2485,7 @@ section.cardSection {
 }
 .supportSec,
 .appSec {
-  background: url(/assets/images/applicationBack.png) no-repeat;
+  background: url(/ePhysician/assets/images/applicationBack.png) no-repeat;
   /* background-size: cover !important; */
   background-position: top center;
 }
@@ -2500,12 +2502,12 @@ section.cardSection {
   height: 100px;
 }
 .applicationSec .applicationInnerBlock::before {
-  background: url(/assets/images/offerBeforImg.png);
+  background: url(/ePhysician/assets/images/offerBeforImg.png);
   left: -10px;
   bottom: -30px;
 }
 .applicationSec .applicationInnerBlock::after {
-  background: url(/assets/images/offerBeforImg.png);
+  background: url(/ePhysician/assets/images/offerBeforImg.png);
   right: -40px;
   top: 30px;
 }
@@ -2535,7 +2537,7 @@ section.cardSection {
   width: 104px;
   height: 100px;
   z-index: 0;
-  background: url(/assets/images/whiteDot.png) no-repeat;
+  background: url(/ePhysician/assets/images/whiteDot.png) no-repeat;
   top: 18px;
   right: -36px;
   background-size: cover;
@@ -2619,7 +2621,7 @@ section.cardSection {
   width: 72px;
   height: 70px;
   z-index: 0;
-  background: url(/assets/images/benefitsDot.png) no-repeat;
+  background: url(/ePhysician/assets/images/benefitsDot.png) no-repeat;
   bottom: -40px;
   left: -43px;
   background-size: cover;
@@ -2668,7 +2670,7 @@ section.resultSec {
 /* adopt section css */
 .adoptSec {
   position: relative;
-  background: url(/assets/images/doctor-use-computer-login-password-connection-server-data-base-patient-technology-treatment-hospital.svg)
+  background: url(/ePhysician/assets/images/doctor-use-computer-login-password-connection-server-data-base-patient-technology-treatment-hospital.svg)
     no-repeat;
   background-size: cover;
   flex-wrap: wrap;
@@ -2698,7 +2700,7 @@ section.resultSec {
 .adoptSec .imgIcon:before {
   position: absolute;
   content: "";
-  background: url(/assets/images/dottedCircle.png) no-repeat;
+  background: url(/ePhysician/assets/images/dottedCircle.png) no-repeat;
   width: 100%;
   height: 100%;
   left: -25px;
@@ -2806,7 +2808,7 @@ section.adoptTxtBlock {
 /* benefit page section start*/
 /* Hero Section start */
 .benefitHero {
-  background: url(/assets/images/herosection.webp) no-repeat;
+  background: url(/ePhysician/assets/images/herosection.webp) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -2873,7 +2875,7 @@ section.adoptTxtBlock {
     content: "";
     width: 100px;
     height: 100px;
-    background-image: url(/assets/images/ic_play_circle_outline_24px.webp);
+    background-image: url(/ePhysician/assets/images/ic_play_circle_outline_24px.webp);
     background-position: center center !important;
     background-repeat: no-repeat;
   }
@@ -2973,7 +2975,7 @@ section.adminSec .txtBlock {
 .publicImgSection::before {
   content: "";
   position: absolute;
-  background: url(/assets/images/rectangle_33615.webp) no-repeat;
+  background: url(/ePhysician/assets/images/rectangle_33615.webp) no-repeat;
   background-size: cover;
   background-position: center;
   z-index: -1;
