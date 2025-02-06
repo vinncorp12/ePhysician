@@ -1386,7 +1386,8 @@ footer.footerSec ul {
   margin-top: 100px;
 }
 .bannerBlock {
-  background: url(/assets/images/Home-Page-Main-Banner.webp) no-repeat;
+  background: url(/ePhysician/assets/images/Home-Page-Main-Banner.webp)
+    no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -1395,7 +1396,7 @@ footer.footerSec ul {
 }
 .bannerImg::before {
   content: "";
-  background: url(/assets/images/banner-before-image.webp) no-repeat;
+  background: url(/ePhysician/assets/images/banner-before-image.webp) no-repeat;
   position: absolute;
   top: 0;
   left: 0;
