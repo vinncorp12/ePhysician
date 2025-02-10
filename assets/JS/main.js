@@ -1,3 +1,19 @@
+// Function to set the active class based on the current URL hash
+document.addEventListener("DOMContentLoaded", function () {
+  function updateActiveMenu() {
+    const links = document.querySelectorAll(".nav-item a");
+    links.forEach((link) => link.classList.remove("prevActive"));
+    const currentPage = window.location.pathname.split("/").pop();
+    links.forEach((link) => {
+      const linkHref = link.getAttribute("href");
+      if (linkHref.includes(currentPage)) {
+        link.classList.add("prevActive");
+      }
+    });
+  }
+  updateActiveMenu();
+});
+// for add or remove menu active class
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -5,21 +21,18 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
 });
-
 document.querySelectorAll(".nav-link").forEach((n) =>
   n.addEventListener("click", () => {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
   })
 );
-
 jQuery(document).ready(function () {
   jQuery(".nav-link").click(function () {
     jQuery(".nav-link").removeClass("active");
     jQuery(this).addClass("active");
   });
 });
-
 jQuery(document).ready(function () {
   jQuery(".hamburger").click(function () {
     if (jQuery(".hamburger").has(".active")) {
@@ -52,9 +65,6 @@ jQuery(window).scroll(function () {
 
 jQuery(document).ready(function () {
   "use strict";
-
-  //Scroll back to top
-
   var progressPath = document.querySelector(".progress-wrap path");
   var pathLength = progressPath.getTotalLength();
   progressPath.style.transition = progressPath.style.WebkitTransition = "none";
@@ -86,11 +96,27 @@ jQuery(document).ready(function () {
     return false;
   });
 });
-
+// if (jQuery("html:not(.mobile-user-agent)")) {
+//   jQuery(".video-preview-image")
+//     .unbind("click")
+//     .bind("click", function () {
+//       jQuery(this).hide();
+//     });
+// }
 if (jQuery("html:not(.mobile-user-agent)")) {
+  jQuery("video").each(function () {
+    this.pause();
+  });
   jQuery(".video-preview-image")
     .unbind("click")
     .bind("click", function () {
+      var videoElement = jQuery(this).siblings("video")[0];
+      jQuery("video").each(function () {
+        this.pause();
+      });
+      if (videoElement) {
+        videoElement.play();
+      }
       jQuery(this).hide();
     });
 }
