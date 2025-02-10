@@ -8,6 +8,9 @@
   --btnColor: #002c7c;
   --labelColor: #313131;
 }
+.backgroundWhite {
+  background: #fff;
+}
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 * {
   margin: 0px;
@@ -46,8 +49,8 @@ body {
   position: fixed;
   right: 50px;
   bottom: 50px;
-  height: 46px;
-  width: 46px;
+  height: 40px;
+  width: 40px;
   cursor: pointer;
   display: block;
   border-radius: 50px;
@@ -63,49 +66,28 @@ body {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+  background: #fff;
 }
 .progress-wrap::after {
   position: absolute;
   font-family: "FontAwesome";
   content: "\f062";
   text-align: center;
-  line-height: 46px;
-  font-size: 24px;
+  line-height: 40px;
+  font-size: 20px;
   color: var(--grey);
   left: 0;
   top: 0;
-  height: 46px;
-  width: 46px;
+  height: 40px;
+  width: 40px;
   cursor: pointer;
   display: block;
   z-index: 1;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
+  color: #003ba5;
 }
-.progress-wrap:hover::after {
-  opacity: 0;
-}
-.progress-wrap::before {
-  position: absolute;
-  font-family: "FontAwesome";
-  content: "\f062";
-  text-align: center;
-  line-height: 46px;
-  font-size: 24px;
-  opacity: 0;
-  background: #003ba5;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  left: 0;
-  top: 0;
-  height: 46px;
-  width: 46px;
-  cursor: pointer;
-  display: block;
-  z-index: 2;
-  -webkit-transition: all 200ms linear;
-  transition: all 200ms linear;
-}
+
 .progress-wrap:hover::before {
   opacity: 1;
 }
@@ -342,6 +324,9 @@ footer.footerSec ul {
   }
 }
 @media (max-width: 1024px) {
+  ul.navbar-nav.nav-menu.active a.nav-link.prevActive {
+    color: #fff !important;
+  }
   header.navigation-header .header-wrap {
     transform: unset !important;
   }
@@ -440,6 +425,11 @@ footer.footerSec ul {
   .benefitHero .mainBanner {
     padding: 90px 0;
   }
+  .appChildSec .video-preview-image,
+  .appChildSec video {
+    height: 195px !important;
+    border-radius: 10px 0 0;
+  }
 }
 @media (max-width: 991px) and (min-width: 567px) {
   .ftrMainSec .collPic {
@@ -447,6 +437,51 @@ footer.footerSec ul {
   }
 }
 @media (max-width: 991px) {
+  .introduceSec .video-preview-image,
+  .introduceSec video {
+    height: 380px !important;
+  }
+  .progress-wrap {
+    right: 30px;
+    bottom: 50px;
+    height: 30px;
+    width: 30px;
+  }
+  .progress-wrap::after {
+    line-height: 30px;
+    font-size: 14px;
+    height: 30px;
+    width: 30px;
+  }
+  .adminSec video,
+  .adminSec .video-preview-image {
+    height: 190px !important;
+  }
+  .appChildSec {
+    gap: 30px !important;
+  }
+  .appSec h3 {
+    font-size: 20px !important;
+    height: 50px !important;
+  }
+  .introduceSec h3,
+  .publicBlock .contentWidget {
+    width: 100% !important;
+  }
+  .appChildSec .video-preview-image,
+  .appChildSec video {
+    height: 125px !important;
+  }
+  .publicInnerSection {
+    gap: 20px !important;
+  }
+  .publicBlock img {
+    height: auto !important;
+    padding-left: 30px !important;
+  }
+  .publicBlock .content {
+    padding-right: 30px !important;
+  }
   .adminInnerBlock {
     flex-wrap: wrap !important;
   }
@@ -785,6 +820,34 @@ footer.footerSec ul {
 /* set banner space on tablet device*/
 /* define custom classes for converting flex row to column*/
 @media (max-width: 767px) {
+  .nav-menu {
+    gap: 0px !important;
+  }
+  .nav-menu a.nav-link {
+    padding: 5px 0;
+  }
+  .introduceSec .video-preview-image,
+  .introduceSec video {
+    height: 210px !important;
+  }
+  .adminSec video,
+  .adminSec .video-preview-image {
+    height: 210px !important;
+  }
+  .customCard {
+    width: calc(100% - 40px) !important;
+  }
+  .appChildSec .video-preview-image,
+  .appChildSec video {
+    height: 215px !important;
+    object-fit: contain;
+  }
+  .publicBlock img {
+    padding-left: unset !important;
+  }
+  .publicBlock .content {
+    padding: unset !important;
+  }
   .introduceSec h3,
   .benefitHero p {
     width: 100% !important;
@@ -2850,7 +2913,7 @@ section.adoptTxtBlock {
   height: 370px;
 }
 .appChildSec .video-preview-image {
-  height: 220px;
+  height: 230px;
 }
 .introduceSec .video-preview-image,
 .adminSec .video-preview-image,

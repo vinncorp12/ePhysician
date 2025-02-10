@@ -120,3 +120,17 @@ if (jQuery("html:not(.mobile-user-agent)")) {
       jQuery(this).hide();
     });
 }
+// Get all videos with the class 'my-video'
+const videos = document.querySelectorAll(".my-video");
+
+// Loop through all videos and add event listeners
+videos.forEach((video) => {
+  video.addEventListener("play", () => {
+    // Pause all other videos when one starts playing
+    videos.forEach((otherVideo) => {
+      if (otherVideo !== video) {
+        otherVideo.pause();
+      }
+    });
+  });
+});
