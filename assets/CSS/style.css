@@ -1731,7 +1731,7 @@ section.financeSection::before {
 .ftrMainSec h3 {
   color: var(--headingColor);
   font-size: 1rem;
-  /* text-decoration: underline 2px ; */
+  text-decoration: underline 2px;
   text-underline-offset: 10px;
   text-decoration-color: #0058f7;
   font-weight: 600;
@@ -1740,6 +1740,9 @@ section.financeSection::before {
   -webkit-text-decoration-color: #0058f7 !important;
   -webkit-text-decoration-style: solid !important;
   -webkit-text-decoration-thickness: 2px !important;
+}
+.collThr .ftrHeadingSec h3 {
+  text-decoration: none !important;
 }
 .ftrMainSec .collThr ul {
   column-count: 2;
