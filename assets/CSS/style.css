@@ -2887,7 +2887,8 @@ section.adoptTxtBlock {
 .introduceSec .videoWrapper,
 .adminSec .videoWrapper,
 .systemBlock .videoWrapper,
-.appChildSec .videoWrapper {
+.appChildSec .videoWrapper,
+.whatWeDoSec .videoWrapper {
   position: relative;
   /* padding-bottom: 56.25%; */
   /* 16:9 */
@@ -2896,7 +2897,8 @@ section.adoptTxtBlock {
 .introduceSec .videoWrapper iframe,
 .adminSec .videoWrapper iframe,
 .systemBlock .videoWrapper iframe,
-.appChildSec .videoWrapper iframe {
+.appChildSec .videoWrapper iframe,
+.whatWeDoSec .videoWrapper iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -2906,7 +2908,8 @@ section.adoptTxtBlock {
 .introduceSec .video-preview-image,
 .adminSec .video-preview-image,
 .systemBlock .video-preview-image,
-.appChildSec .video-preview-image {
+.appChildSec .video-preview-image,
+.whatWeDoSec .video-preview-image {
   width: 100%;
 }
 .introduceSec .video-preview-image {
@@ -2924,7 +2927,8 @@ section.adoptTxtBlock {
 .introduceSec .video-preview-image,
 .adminSec .video-preview-image,
 .systemBlock .video-preview-image,
-.appChildSec .video-preview-image {
+.appChildSec .video-preview-image,
+.whatWeDoSec .video-preview-image {
   position: absolute;
   top: 0;
   left: 0;
