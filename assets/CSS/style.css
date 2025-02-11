@@ -437,6 +437,9 @@ footer.footerSec ul {
   }
 }
 @media (max-width: 991px) {
+  section.dataBlock .innerSection {
+    gap: 10px !important;
+  }
   .introduceSec .video-preview-image,
   .introduceSec video {
     height: 380px !important;
