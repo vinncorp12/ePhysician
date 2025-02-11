@@ -2912,6 +2912,9 @@ section.adoptTxtBlock {
 .whatWeDoSec .video-preview-image {
   width: 100%;
 }
+.whatWeDoSec .video-preview-image {
+  height: 430px;
+}
 .introduceSec .video-preview-image {
   height: 430px;
 }
