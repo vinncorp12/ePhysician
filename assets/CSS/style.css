@@ -440,6 +440,9 @@ footer.footerSec ul {
   section.dataBlock .innerSection {
     gap: 10px !important;
   }
+  .dataBlock h2 {
+    width: 100% !important;
+  }
   .introduceSec .video-preview-image,
   .introduceSec video {
     height: 380px !important;
