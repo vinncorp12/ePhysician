@@ -433,6 +433,9 @@ footer.footerSec ul {
   section.dataBlock .innerSection {
     gap: 15px !important;
   }
+  .paraBanner p {
+    margin-bottom: 5px !important;
+  }
 }
 @media (max-width: 991px) and (min-width: 567px) {
   .ftrMainSec .collPic {
