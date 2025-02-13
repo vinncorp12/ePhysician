@@ -170,7 +170,7 @@ h5 {
 }
 .nav-item .prevActive {
   color: var(--darkBlue) !important;
-  font-weight: 500;
+  font-weight: 600;
 }
 .hamburger {
   display: none;
