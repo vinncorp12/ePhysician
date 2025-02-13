@@ -883,6 +883,9 @@ footer.footerSec ul {
   .nav-menu a.nav-link {
     padding: 5px 0;
   }
+  .whatWeDoSec .video-preview-image .whatWeDoSec video {
+    height: 220px !important;
+  }
   .introduceSec .video-preview-image,
   .introduceSec video {
     height: 210px !important;
