@@ -848,7 +848,7 @@ footer.footerSec ul {
 /* define custom classes for converting flex row to column*/
 @media (max-width: 767px) {
   header.navigation-header .container {
-    padding: 0 10px !important;
+    padding: 0 15px !important;
   }
   .publicImgSection::before {
     display: none !important;
