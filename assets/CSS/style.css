@@ -1869,9 +1869,12 @@ section.ftrCopyrightSec {
   display: flex;
   flex-wrap: wrap;
 }
-section.dataBlock .innerSection {
-  gap: 50px;
+section.dataBlock .contentWidget {
+  padding-right: 90px;
 }
+/* section.dataBlock .innerSection {
+  gap: 50px;
+} */
 .whatWeDoSec {
   background: url(/ePhysician/assets/images/background.webp) no-repeat;
 }
