@@ -430,9 +430,9 @@ footer.footerSec ul {
     height: 195px !important;
     border-radius: 10px 0 0;
   }
-  section.dataBlock .innerSection {
+  /* section.dataBlock .innerSection {
     gap: 15px !important;
-  }
+  } */
   .paraBanner p {
     margin-bottom: 5px !important;
   }
@@ -443,9 +443,15 @@ footer.footerSec ul {
   }
 }
 @media (max-width: 991px) {
-  section.dataBlock .innerSection {
-    gap: 10px !important;
+  .dataBlock .content {
+    gap: 20px !important;
   }
+  section.dataBlock .contentWidget {
+    padding-right: 20px !important;
+  }
+  /* section.dataBlock .innerSection {
+    gap: 10px !important;
+  } */
   .dataBlock h2 {
     width: 100% !important;
   }
@@ -832,6 +838,9 @@ footer.footerSec ul {
 /* set banner space on tablet device*/
 /* define custom classes for converting flex row to column*/
 @media (max-width: 767px) {
+  section.dataBlock .contentWidget {
+    padding-right: 0px !important;
+  }
   .nav-menu {
     gap: 0px !important;
   }
