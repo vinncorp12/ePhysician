@@ -50,7 +50,9 @@ a.nav-link.prevActive:after {
   left: 0;
   background-size: cover;
 }
-
+ul.navbar-nav.nav-menu.active a.nav-link.prevActive:after {
+  background: #fff !important;
+}
 /* scroll bar css end*/
 /* bottom to top */
 /* #Progress
