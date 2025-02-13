@@ -865,6 +865,9 @@ footer.footerSec ul {
 /* set banner space on tablet device*/
 /* define custom classes for converting flex row to column*/
 @media (max-width: 767px) {
+  .innerSection {
+    gap: 20px;
+  }
   header.navigation-header .container {
     padding: 0 15px !important;
   }
