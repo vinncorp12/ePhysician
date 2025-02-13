@@ -425,6 +425,9 @@ footer.footerSec ul {
   .paraBanner.py-3 {
     padding: 0 !important;
   }
+  .functionalitySec .funcImageBlock {
+    margin-top: -40px !important;
+  }
   .benefitHero .mainBanner {
     padding: 90px 0;
   }
