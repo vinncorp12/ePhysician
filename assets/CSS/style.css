@@ -430,6 +430,9 @@ footer.footerSec ul {
     height: 195px !important;
     border-radius: 10px 0 0;
   }
+  section.dataBlock .innerSection {
+    gap: 15px !important;
+  }
 }
 @media (max-width: 991px) and (min-width: 567px) {
   .ftrMainSec .collPic {
