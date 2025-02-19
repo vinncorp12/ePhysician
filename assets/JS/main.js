@@ -134,3 +134,19 @@ videos.forEach((video) => {
     });
   });
 });
+
+// Wait for the page to fully load
+window.addEventListener("load", function () {
+  // Add a delay before hiding the preloader (e.g., 2 seconds)
+  setTimeout(function () {
+    // Hide the preloader
+    const preloader = document.getElementById("preloader");
+    preloader.style.opacity = "0";
+
+    // After the transition (0.5s), hide the preloader completely
+    setTimeout(function () {
+      preloader.style.visibility = "hidden";
+      document.getElementById("content").style.display = "block"; // Show the main content
+    }, 500); // This timeout corresponds to the fade-out duration
+  }, 1000); // 2000 milliseconds = 2 seconds delay before hiding the preloader
+});
