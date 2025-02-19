@@ -65,11 +65,6 @@ body {
 /* Main Content Styles */
 #content {
   display: none;
-  padding: 20px;
-}
-
-body {
-  font-family: Arial, sans-serif;
 }
 
 /* scroll bar css */

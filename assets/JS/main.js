@@ -147,6 +147,6 @@ window.addEventListener("load", function () {
     setTimeout(function () {
       preloader.style.visibility = "hidden";
       document.getElementById("content").style.display = "block"; // Show the main content
-    }, 500); // This timeout corresponds to the fade-out duration
-  }, 1000); // 2000 milliseconds = 2 seconds delay before hiding the preloader
+    }, 200); // This timeout corresponds to the fade-out duration
+  }, 500); // 2000 milliseconds = 2 seconds delay before hiding the preloader
 });
