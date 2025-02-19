@@ -147,6 +147,12 @@ window.addEventListener("load", function () {
     setTimeout(function () {
       preloader.style.visibility = "hidden";
       document.getElementById("content").style.display = "block"; // Show the main content
+
+      // Select all navbar links and add the 'active' class
+      const navbarLinks = document.querySelectorAll(".navbar a"); // Adjust this selector based on your HTML
+      navbarLinks.forEach(function (link) {
+        link.classList.add("prevActive");
+      });
     }, 200); // This timeout corresponds to the fade-out duration
-  }, 500); // 2000 milliseconds = 2 seconds delay before hiding the preloader
+  }, 500); // 500 milliseconds = 0.5 seconds delay before hiding the preloader
 });
