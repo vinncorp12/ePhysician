@@ -199,7 +199,7 @@ h5 {
   gap: 10px;
 }
 .nav-item a {
-  color: var(--lightblack);
+  color: var(--lightblack) !important;
   font-size: 1.025rem;
   line-height: 1.5em;
 }
