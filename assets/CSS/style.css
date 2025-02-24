@@ -488,6 +488,9 @@ footer.footerSec ul {
   }
 }
 @media (max-width: 1366px) and (min-width: 1030px) {
+  .appChildSec p.card-title {
+    height: 280px !important;
+  }
   .publicImgSection::before {
     height: 220px !important;
   }
