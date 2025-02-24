@@ -209,6 +209,9 @@ h5 {
 .nav-link:hover {
   color: var(--red);
 }
+ul.navbar-nav.nav-menu.active li a {
+  color: #fff !important;
+}
 .nav-item .prevActive {
   color: var(--darkBlue) !important;
   font-weight: 600;
@@ -383,6 +386,10 @@ footer.footerSec ul {
   }
 }
 @media (max-width: 1024px) {
+  .appChildSec p.card-title {
+    height: 250px !important;
+    padding: 0 !important;
+}
   ul.navbar-nav.nav-menu.active a.nav-link.prevActive {
     color: #fff !important;
   }
@@ -739,9 +746,6 @@ footer.footerSec ul {
     bottom: -20px !important;
     right: -10px !important;
   }
-  /* .featureSection {
-        height: 100vh !important;
-    } */
   .functionalitySec img {
     height: 470px !important;
   }
@@ -906,6 +910,10 @@ footer.footerSec ul {
 /* set banner space on tablet device*/
 /* define custom classes for converting flex row to column*/
 @media (max-width: 767px) {
+  .appChildSec p.card-title {
+    height: auto !important;
+    padding: 0 !important;
+}
   .innerSection {
     gap: 20px;
   }
