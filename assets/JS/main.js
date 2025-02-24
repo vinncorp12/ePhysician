@@ -120,14 +120,8 @@ videos.forEach((video) => {
   });
 });
 
+// Wait for the page to fully load
 window.addEventListener("load", function () {
-  // Check for trailing slash in the URL and redirect to clean URL without it
-  const currentURL = window.location.pathname;
-  if (currentURL.endsWith("/")) {
-    const cleanURL = currentURL.slice(0, -1);
-    window.history.replaceState(null, "", cleanURL); // Redirect to the same URL without the trailing slash
-  }
-
   setTimeout(function () {
     const preloader = document.getElementById("preloader");
     preloader.style.opacity = "0";
@@ -138,22 +132,10 @@ window.addEventListener("load", function () {
       navbarLinks.forEach(function (link) {
         link.classList.remove("preactive");
       });
-
-      // Get the current page without trailing slash
-      const currentPage = window.location.pathname.split("/").pop().replace(/\/$/, "");
-
-      // If there's no page (default URL like / or index.html), apply preactive to the corresponding link
-      if (!currentPage || currentPage === "") {
+      const currentPage = window.location.pathname.split("/").pop();
+      if (currentPage && currentPage !== "") {
         navbarLinks.forEach(function (link) {
-          const linkPage = link.getAttribute("href").split("/").pop().replace(/\/$/, "");
-          // If the link's href is the root ("/" or similar), add the preactive class
-          if (linkPage === "" || linkPage === "index.html") {
-            link.classList.add("prevActive");
-          }
-        });
-      } else {
-        navbarLinks.forEach(function (link) {
-          const linkPage = link.getAttribute("href").split("/").pop().replace(/\/$/, "");
+          const linkPage = link.getAttribute("href").split("/").pop();
           if (linkPage === currentPage) {
             link.classList.add("prevActive");
           }
