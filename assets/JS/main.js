@@ -137,22 +137,24 @@ videos.forEach((video) => {
 
 // Wait for the page to fully load
 window.addEventListener("load", function () {
-  // Add a delay before hiding the preloader (e.g., 2 seconds)
   setTimeout(function () {
-    // Hide the preloader
     const preloader = document.getElementById("preloader");
     preloader.style.opacity = "0";
-
-    // After the transition (0.5s), hide the preloader completely
     setTimeout(function () {
       preloader.style.visibility = "hidden";
       document.getElementById("content").style.display = "block"; // Show the main content
-
-      // Select all navbar links and add the 'active' class
       const navbarLinks = document.querySelectorAll(".navbar a"); // Adjust this selector based on your HTML
       navbarLinks.forEach(function (link) {
-        link.classList.add("prevActive");
+        link.classList.remove("preactive");
+      });
+      const currentPage = window.location.pathname.split("/").pop(); // This is for matching based on URL path
+      navbarLinks.forEach(function (link) {
+        const linkPage = link.getAttribute("href").split("/").pop();
+        if (linkPage === currentPage) {
+          link.classList.add("preactive");
+        }
       });
     }, 200); // This timeout corresponds to the fade-out duration
   }, 500); // 500 milliseconds = 0.5 seconds delay before hiding the preloader
 });
+
