@@ -905,6 +905,9 @@ footer.footerSec ul {
 }
 /* set banner space on tablet device*/
 @media (min-width: 991px) {
+  .publicImgSection::before {
+    height: 240px !important;
+}
   .collBanner {
     min-height: 500px;
     height: auto !important;
@@ -913,6 +916,9 @@ footer.footerSec ul {
 /* set banner space on tablet device*/
 /* define custom classes for converting flex row to column*/
 @media (max-width: 767px) {
+  .appSec h3{
+    height: auto !important;
+  }
   .appChildSec p.card-title {
     height: auto !important;
     padding: 0 !important;
