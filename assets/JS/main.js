@@ -1,18 +1,3 @@
-// Function to set the active class based on the current URL hash
-document.addEventListener("DOMContentLoaded", function () {
-  function updateActiveMenu() {
-    const links = document.querySelectorAll(".nav-item a");
-    links.forEach((link) => link.classList.remove("prevActive"));
-    const currentPage = window.location.pathname.split("/").pop();
-    links.forEach((link) => {
-      const linkHref = link.getAttribute("href");
-      if (linkHref.includes(currentPage)) {
-        link.classList.add("prevActive");
-      }
-    });
-  }
-  updateActiveMenu();
-});
 // for add or remove menu active class
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
@@ -135,8 +120,14 @@ videos.forEach((video) => {
   });
 });
 
-// Wait for the page to fully load
 window.addEventListener("load", function () {
+  // Check for trailing slash in the URL and redirect to clean URL without it
+  const currentURL = window.location.pathname;
+  if (currentURL.endsWith("/")) {
+    const cleanURL = currentURL.slice(0, -1);
+    window.history.replaceState(null, "", cleanURL); // Redirect to the same URL without the trailing slash
+  }
+
   setTimeout(function () {
     const preloader = document.getElementById("preloader");
     preloader.style.opacity = "0";
@@ -147,14 +138,29 @@ window.addEventListener("load", function () {
       navbarLinks.forEach(function (link) {
         link.classList.remove("preactive");
       });
-      const currentPage = window.location.pathname.split("/").pop(); // This is for matching based on URL path
-      navbarLinks.forEach(function (link) {
-        const linkPage = link.getAttribute("href").split("/").pop();
-        if (linkPage === currentPage) {
-          link.classList.add("preactive");
-        }
-      });
+
+      // Get the current page without trailing slash
+      const currentPage = window.location.pathname.split("/").pop().replace(/\/$/, "");
+
+      // If there's no page (default URL like / or index.html), apply preactive to the corresponding link
+      if (!currentPage || currentPage === "") {
+        navbarLinks.forEach(function (link) {
+          const linkPage = link.getAttribute("href").split("/").pop().replace(/\/$/, "");
+          // If the link's href is the root ("/" or similar), add the preactive class
+          if (linkPage === "" || linkPage === "index.html") {
+            link.classList.add("prevActive");
+          }
+        });
+      } else {
+        navbarLinks.forEach(function (link) {
+          const linkPage = link.getAttribute("href").split("/").pop().replace(/\/$/, "");
+          if (linkPage === currentPage) {
+            link.classList.add("prevActive");
+          }
+        });
+      }
     }, 200); // This timeout corresponds to the fade-out duration
   }, 500); // 500 milliseconds = 0.5 seconds delay before hiding the preloader
 });
+
 
