@@ -3073,11 +3073,12 @@ section.adoptTxtBlock {
     left: 50%;
     transform: translate(-50%, -50%);
     content: "";
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     background-image: url(/ePhysician/assets/images/ic_play_circle_outline_24px.webp);
     background-position: center center !important;
     background-repeat: no-repeat;
+    background-size: contain;
   }
   &:hover {
     &:after {
