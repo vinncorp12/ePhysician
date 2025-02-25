@@ -499,9 +499,9 @@ footer.footerSec ul {
   .appChildSec p.card-title {
     height: 300px !important;
   }
-  .publicImgSection::before {
+  /* .publicImgSection::before {
     height: 220px !important;
-  }
+  } */
   .paraBanner.py-3 {
     padding: 0 !important;
   }
