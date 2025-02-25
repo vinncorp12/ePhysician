@@ -295,6 +295,10 @@ a.nav-links-btn:hover {
 footer.footerSec ul {
   margin-bottom: 0;
 }
+.footerSec .ftrLogoSec,
+.footerSec .ftrMainSec {
+  padding: 0 !important;
+}
 /* Media Query  */
 
 @media (min-width: 1400px) {
