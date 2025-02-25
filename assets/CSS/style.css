@@ -113,7 +113,7 @@ ul.navbar-nav.nav-menu.active a.nav-link.prevActive:after {
   display: block;
   border-radius: 50px;
   box-shadow: inset 0 0 0 2px rgba(0, 59, 165, 0.5);
-  z-index: 10000;
+  z-index: 9;
   opacity: 0;
   visibility: hidden;
   transform: translateY(15px);
@@ -300,7 +300,6 @@ footer.footerSec ul {
   padding: 0 !important;
 }
 /* Media Query  */
-
 @media (min-width: 1400px) {
   .databaseSec .innerDbSec::before {
     top: 80px !important;
