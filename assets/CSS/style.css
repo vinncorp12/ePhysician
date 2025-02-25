@@ -390,7 +390,7 @@ footer.footerSec ul {
   .appChildSec p.card-title {
     height: 270px !important;
     padding: 0 !important;
-}
+  }
   ul.navbar-nav.nav-menu.active a.nav-link.prevActive {
     color: #fff !important;
   }
@@ -524,7 +524,7 @@ footer.footerSec ul {
 @media (max-width: 991px) {
   .publicImgSection::before {
     height: 240px !important;
-}
+  }
   .dataBlock .content {
     gap: 20px !important;
   }
@@ -909,7 +909,6 @@ footer.footerSec ul {
 }
 /* set banner space on tablet device*/
 @media (min-width: 991px) {
-  
   .collBanner {
     min-height: 500px;
     height: auto !important;
@@ -918,13 +917,13 @@ footer.footerSec ul {
 /* set banner space on tablet device*/
 /* define custom classes for converting flex row to column*/
 @media (max-width: 767px) {
-  .appSec h3{
+  .appSec h3 {
     height: auto !important;
   }
   .appChildSec p.card-title {
     height: auto !important;
     padding: 0 !important;
-}
+  }
   .innerSection {
     gap: 20px;
   }
@@ -3033,7 +3032,7 @@ section.adoptTxtBlock {
   width: 100%;
 }
 .whatWeDoSec .video-preview-image {
-  height: 430px;
+  height: 440px;
 }
 .introduceSec .video-preview-image {
   height: 430px;
