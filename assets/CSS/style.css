@@ -334,6 +334,9 @@ footer.footerSec ul {
   }
 }
 @media (max-width: 1366px) {
+  .ftrMainSec li a {
+    font-size: 13px !important;
+  }
   .publicImgSection::before {
     height: 360px !important;
     left: -30px;
