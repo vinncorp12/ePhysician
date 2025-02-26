@@ -148,16 +148,37 @@ window.addEventListener("load", function () {
 jQuery(document).ready(function () {
   var tabs = document.querySelectorAll(".tabContent");
   var tabsHeader = document.querySelectorAll(".tabHeader");
+
   function isMobile() {
-    return window.innerWidth <= 768;
+    return window.innerWidth <= 768; // Mobile if screen width is less than or equal to 768px
   }
-  if (isMobile()) {
+
+  function isTablet() {
+    return window.innerWidth > 768 && window.innerWidth <= 1024; // Tablet between 768px and 1024px
+  }
+
+  // Add the 'display-block' class to all tabs
+  function showTabs() {
     tabs.forEach(function (tab) {
-      $(tab).find("li").slideUp();
+      $(tab).find("li").addClass("display-block"); // Add class to display li items
     });
+  }
+
+  // Remove the 'display-block' class to hide the tabs
+  function hideTabs() {
+    tabs.forEach(function (tab) {
+      $(tab).find("li").removeClass("display-block"); // Remove class to hide li items
+    });
+  }
+
+  if (isMobile()) {
+    // For mobile screens (<= 768px), hide the li elements
+    hideTabs(); // Hide the li elements
+
     tabsHeader.forEach(function (header) {
       $(header).removeClass("active");
     });
+
     tabsHeader.forEach(function (tabHeader, index) {
       tabHeader.addEventListener("click", function () {
         if ($(tabHeader).hasClass("active")) {
@@ -175,9 +196,11 @@ jQuery(document).ready(function () {
         $(tabs[index]).find("li").slideDown();
       });
     });
+  } else if (isTablet()) {
+    // For tablet screens (between 768px and 1024px), show li elements
+    showTabs(); // Show the li elements by adding the 'display-block' class
   } else {
-    tabs.forEach(function (tab) {
-      $(tab).find("li").slideDown();
-    });
+    // For desktop screens (> 1024px), show li elements
+    showTabs(); // Show the li elements by adding the 'display-block' class
   }
 });

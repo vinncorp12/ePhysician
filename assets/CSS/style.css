@@ -528,6 +528,9 @@ footer.footerSec ul {
   }
 }
 @media (max-width: 991px) {
+  .tabContent li.display-block {
+    display: block;
+  }
   .publicImgSection::before {
     height: 240px !important;
   }
@@ -923,6 +926,9 @@ footer.footerSec ul {
 /* set banner space on tablet device*/
 /* define custom classes for converting flex row to column*/
 @media (max-width: 767px) {
+  .tabContent li {
+    display: none;
+  }
   .ftrImgBlock img {
     display: flex;
     padding: 0 10px;
@@ -1301,7 +1307,6 @@ footer.footerSec ul {
   footer.footerSec {
     padding: 0;
   }
-
   .ftrCopyrightSec p,
   footer.footerSec .ftrHeadingSec,
   .ftrMainSec h3 {
