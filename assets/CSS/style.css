@@ -971,6 +971,10 @@ footer.footerSec ul {
     height: 215px !important;
     object-fit: contain;
   }
+  .whatWeDoSec .video-preview-image,
+  .whatWeDoSec video {
+    height: 230px !important;
+  }
   .publicBlock img {
     padding-left: unset !important;
   }
