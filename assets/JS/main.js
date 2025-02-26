@@ -145,4 +145,39 @@ window.addEventListener("load", function () {
   }, 500); // 500 milliseconds = 0.5 seconds delay before hiding the preloader
 });
 
-
+jQuery(document).ready(function () {
+  var tabs = document.querySelectorAll(".tabContent");
+  var tabsHeader = document.querySelectorAll(".tabHeader");
+  function isMobile() {
+    return window.innerWidth <= 768;
+  }
+  if (isMobile()) {
+    tabs.forEach(function (tab) {
+      $(tab).find("li").slideUp();
+    });
+    tabsHeader.forEach(function (header) {
+      $(header).removeClass("active");
+    });
+    tabsHeader.forEach(function (tabHeader, index) {
+      tabHeader.addEventListener("click", function () {
+        if ($(tabHeader).hasClass("active")) {
+          $(tabHeader).removeClass("active");
+          $(tabs[index]).find("li").slideUp();
+          return;
+        }
+        tabsHeader.forEach(function (header) {
+          $(header).removeClass("active");
+        });
+        tabs.forEach(function (tab) {
+          $(tab).find("li").slideUp();
+        });
+        $(tabHeader).addClass("active");
+        $(tabs[index]).find("li").slideDown();
+      });
+    });
+  } else {
+    tabs.forEach(function (tab) {
+      $(tab).find("li").slideDown();
+    });
+  }
+});

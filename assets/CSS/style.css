@@ -822,7 +822,7 @@ footer.footerSec ul {
     width: 80% !important;
   }
   .ftrMainSec .collPic img {
-    width: 50%;
+    width: 40%;
   }
   .setMargin {
     margin-top: 0 !important;
@@ -923,6 +923,10 @@ footer.footerSec ul {
 /* set banner space on tablet device*/
 /* define custom classes for converting flex row to column*/
 @media (max-width: 767px) {
+  .ftrImgBlock img {
+    display: flex;
+    padding: 0 10px;
+  }
   .appSec h3 {
     height: auto !important;
   }
@@ -991,7 +995,6 @@ footer.footerSec ul {
     height: 30px;
     width: 30px;
   }
-
   .progress-wrap::before,
   .progress-wrap::after {
     line-height: 30px;
@@ -1218,7 +1221,7 @@ footer.footerSec ul {
     background-size: cover !important;
   }
   .ftrMainSec .collPic {
-    margin-top: 0px !important;
+    margin-top: 10px !important;
   }
   .aboutOfficeIntro .imgIntro::before {
     width: 80px !important;
@@ -1292,10 +1295,13 @@ footer.footerSec ul {
     padding-top: 0 !important;
   }
   footer.footerSec {
-    padding: 0 10px;
+    padding: 0;
   }
-  .ftrCopyrightSec p {
-    margin-bottom: 0;
+
+  .ftrCopyrightSec p,
+  footer.footerSec .ftrHeadingSec,
+  .ftrMainSec h3 {
+    margin-bottom: 0 !important;
   }
   .financeInnerSec {
     padding: 0;
@@ -1366,7 +1372,10 @@ footer.footerSec ul {
   }
   .agencyBlock {
     padding: 10px 0 0 0;
-    min-height: 50vh !important;
+    min-height: auto !important;
+  }
+  .ansBlock {
+    padding-top: 20px;
   }
   .taskSec .card h5 {
     font-size: 0.9rem !important;
@@ -1375,8 +1384,52 @@ footer.footerSec ul {
   .headingBlock {
     font-size: 1.5rem !important;
   }
+  .ftrHeadingSec.tabHeader.active i.fa.fa-chevron-down {
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in-out;
+  }
+  i.fa-chevron-down:before {
+    display: block !important;
+  }
+  .ftrMainSec .collOne h3::before,
+  .ftrMainSec .collSec h3::before,
+  .ftrMainSec .collThr h3::before {
+    display: none !important;
+  }
+  .ftrMainSec h3.dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+  }
+  .ftrMenu.tabContent {
+    text-align: left;
+  }
+  .ftrMenu.tabContent ul li a {
+    font-size: 14px !important;
+  }
+  .ftrMainSec .setBorder {
+    border-top: 1px solid #0049be;
+  }
+  .ftrMainSec .setBorder:nth-last-child(3) {
+    border-bottom: 1px solid #0049be;
+  }
+  .footerSec .ftrLogoSec {
+    padding: 10px 0 !important;
+  }
+  .ftrMainSec .collSec,
+  .ftrMainSec .collThr,
+  .ftrMainSec .collOne {
+    padding: 10px 15px !important;
+  }
+  footer.footerSec ul {
+    padding: 0 15px;
+  }
 }
-/* Media Query  */
+/* Media Query End */
+
+.dropdown-toggle::after,
+i.fa-chevron-down:before {
+  display: none;
+}
 /* Animations Section*/
 .imgSection img,
 .imgSection:before {
@@ -1850,18 +1903,6 @@ section.financeSection::before {
 .ftrMainSec h3 {
   color: var(--headingColor);
   font-size: 1rem;
-  text-decoration: underline 2px;
-  text-underline-offset: 10px;
-  text-decoration-color: #0058f7;
-  font-weight: 600;
-  /* -webkit-text-decoration-line: line-through; */
-  -webkit-text-decoration-line: 2px underline !important;
-  -webkit-text-decoration-color: #0058f7 !important;
-  -webkit-text-decoration-style: solid !important;
-  -webkit-text-decoration-thickness: 2px !important;
-}
-.collThr .ftrHeadingSec h3 {
-  text-decoration: none !important;
 }
 .ftrMainSec .collThr ul {
   column-count: 2;
@@ -1906,10 +1947,7 @@ section.ftrCopyrightSec {
   box-shadow: 0px -14px 16px #0f47af16;
   border-radius: 10px 10px 0 0;
 }
-.ftrMainSec .collThr {
-  position: relative;
-  z-index: 2;
-}
+
 .ftrMainSec .collPic {
   position: relative;
   margin-top: -125px;
@@ -1939,12 +1977,13 @@ section.ftrCopyrightSec {
 .ftrMainSec .collThr h3::before {
   content: "";
   position: absolute;
-  z-index: -1;
-  height: 100%;
-  border-bottom: 2px solid #0058f7;
-  top: 7px;
+  z-index: 1;
+  height: 2px;
+  background: #0058f7;
+  bottom: -10px;
   left: 0;
   right: 0;
+  background-size: cover;
 }
 .ftrMainSec .collOne h3::before {
   width: 75px;
@@ -1953,7 +1992,7 @@ section.ftrCopyrightSec {
   width: 85px;
 }
 .ftrMainSec .collThr h3::before {
-  width: 300px;
+  width: auto;
 }
 .ftrCopyrightSec .comp p {
   margin-bottom: 0 !important;
