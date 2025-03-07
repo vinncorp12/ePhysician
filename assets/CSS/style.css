@@ -3244,3 +3244,12 @@ section.adminSec .txtBlock {
 }
 
 /* benefit page section end*/
+/* Infectious Disease Page Css */
+.infectiousDiseaseBanner {
+  background: url(/ePhysician/assets/images/infectious-disease-banner.webp)
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Infectious Disease Page Css end*/
