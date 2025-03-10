@@ -12,7 +12,9 @@
 .backgroundWhite {
   background: #fff;
 }
-
+.backgroundBlue {
+  color: var(--headingColor);
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -3251,5 +3253,9 @@ section.adminSec .txtBlock {
   background-size: cover;
   background-position: center;
 }
-
+.influenzaSec {
+  background: url(/ePhysician/assets/images/massive-background.webp) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 /* Infectious Disease Page Css end*/
