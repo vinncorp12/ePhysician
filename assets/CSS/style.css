@@ -12,8 +12,11 @@
 .backgroundWhite {
   background: #fff;
 }
+.contentWhite {
+  color: var(--white);
+}
 .backgroundBlue {
-  color: var(--headingColor);
+  background: var(--headingColor);
 }
 * {
   margin: 0px;
