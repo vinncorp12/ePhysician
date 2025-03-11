@@ -3260,7 +3260,24 @@ section.adminSec .txtBlock {
   background-size: cover;
   background-position: center;
 }
+.dataImgSection img,
+.influnzaReportInnerSec img {
+  filter: drop-shadow(35px 11px 50px #0f47af20);
+}
 /* Infectious Disease Page Css end*/
 .influnzaReportInnerSec {
   gap: 60px;
+}
+.documentInnerSec {
+  gap: 20px;
+}
+.documentInnerSec img {
+  filter: drop-shadow(24.66px 7.75px 35.33px #0f47af20);
+}
+.influenzaInnerSection {
+  overflow: hidden;
+}
+.influenzeContent {
+  width: 700px;
+  padding: 0 120px;
 }
