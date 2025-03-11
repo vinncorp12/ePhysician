@@ -13,7 +13,7 @@
   background: #fff;
 }
 .contentWhite {
-  color: var(--white);
+  color: var(--white) !important;
 }
 .backgroundBlue {
   background: var(--headingColor);
@@ -150,7 +150,6 @@ ul.navbar-nav.nav-menu.active a.nav-link.prevActive:after {
   transition: all 200ms linear;
   color: #003ba5;
 }
-
 .progress-wrap:hover::before {
   opacity: 1;
 }
