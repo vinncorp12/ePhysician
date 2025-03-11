@@ -3262,3 +3262,6 @@ section.adminSec .txtBlock {
   background-position: center;
 }
 /* Infectious Disease Page Css end*/
+.influnzaReportInnerSec {
+  gap: 60px;
+}
