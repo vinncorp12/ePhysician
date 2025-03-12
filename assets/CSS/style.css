@@ -397,6 +397,10 @@ footer.footerSec ul {
   }
 }
 @media (max-width: 1024px) {
+  .influenzaContent {
+    width: 590px !important;
+    padding: 0 60px !important;
+  }
   .appChildSec p.card-title {
     height: 270px !important;
     padding: 0 !important;
