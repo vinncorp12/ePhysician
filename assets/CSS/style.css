@@ -3437,3 +3437,9 @@ a.lightbox-close:after {
 .lightbox-target:target a.lightbox-close {
   top: 0px;
 }
+
+.influnzaReportSec {
+  background: url(/ePhysician/assets/images/reports-bg.webp) no-repeat;
+  background-size: cover;
+  background-position: center;
+}

@@ -193,3 +193,15 @@ jQuery(document).ready(function () {
     showTabs();
   }
 });
+window.onload = function () {
+  setTimeout(() => {
+    if (window.location.hash) {
+      let targetSection = document.getElementById(
+        window.location.hash.substring(1)
+      );
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, 500); // Adjust delay based on your preloader duration
+};
