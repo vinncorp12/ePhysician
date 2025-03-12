@@ -129,12 +129,12 @@
         </section>
         <!--influenza sec starts-->
         <section
-          class="influenzaSec col-lg-12 d-flex justify-content-center align-items-center align-items-center py-5 setColPadding"
+          class="influenzaSec col-lg-12 d-flex align-items-center align-items-center py-5 setColPadding"
         >
           <div class="container">
             <div class="row">
               <div
-                class="influenzaInnerSection col-lg-12 d-flex justify-content-center align-items-center setFlexCol p-0"
+                class="influenzaInnerSection col-lg-12 d-flex align-items-center setFlexCol p-0"
               >
                 <div class="dataImgSection col-lg-5 col-md-6 col-12">
                   <img
@@ -170,36 +170,46 @@
                 class="documentInnerSec d-flex flex-row col-lg-12 justify-content-center align-items-center text-center p-0"
               >
                 <div class="documentThumbnail01">
-                  <a href="#" type="application/pdf"
+                  <a class="lightbox" href="#it-01" type="image"
                     ><img
                       src="./assets/images/it-01.webp"
                       alt=""
                       class="img-fluid"
                   /></a>
+                  <div class="lightbox-target" id="it-01">
+                    <img src="./assets/images/it-01.webp" />
+                    <a class="lightbox-close" href="#"></a>
+                  </div>
                 </div>
                 <div class="documentThumbnail01">
-                  <a href="#" type="application/pdf"
+                  <a class="lightbox" href="#it-02" type="image"
                     ><img
                       src="./assets/images/it-02.webp"
                       alt=""
                       class="img-fluid"
                   /></a>
+                  <div class="lightbox-target" id="it-02">
+                    <img src="./assets/images/it-02.webp" />
+                    <a class="lightbox-close" href="#"></a>
+                  </div>
                 </div>
                 <div class="documentThumbnail01">
-                  <a href="#" type="application/pdf"
+                  <a class="lightbox" href="#it-03" type="image"
                     ><img
                       src="./assets/images/it-03.webp"
                       alt=""
                       class="img-fluid"
                   /></a>
+                  <div class="lightbox-target" id="it-03">
+                    <img src="./assets/images/it-03.webp" />
+                    <a class="lightbox-close" href="#"></a>
+                  </div>
                 </div>
               </div>
-              <div class="documnetBtn">
-                <div
-                  class="btnSec d-flex justify-content-center align-items-center"
-                >
-                  <a class="btn" href="#">Covid Application</a>
-                </div>
+              <div
+                class="documnetBtn d-flex justify-content-center align-items-center"
+              >
+                <a class="btn" href="#">Covid Application</a>
               </div>
             </div>
           </div>
@@ -212,7 +222,7 @@
           <div class="container">
             <div class="row">
               <div
-                class="pandemicInnerBlock d-flex col-lg-12 align-items-end setMainCol p-0"
+                class="pandemicInnerBlock d-flex col-lg-12 align-items-center setMainCol p-0"
               >
                 <div class="txtBlock col-lg-8 col-md-6 col-12">
                   <h3 class="contentWhite">
@@ -225,36 +235,29 @@
                       pandemics- be they seasonal H1 and H3, or Avian influenza
                       H5- necessitates quickly differentiating between typical
                       clinical presentations, their variants and other
-                      respiratory pathogens such as Covid. This is of particular
-                      relevance when there is a delay in, or lack of access to,
-                      highly accurate testing- the next step in identification
-                      and diagnosis. To better meet both patient-centered and
-                      epidemiologic objectives, E-Physician’s Office, Inc.,
-                      collects, aggregates, assembles and analyzes data at
-                      bedside.
+                      respiratory pathogens such as Covid.
+                    </p>
+                    <p class="contentWhite m-0">
+                      This is of particular relevance when there is a delay in,
+                      or lack of access to, highly accurate testing- the next
+                      step in identification and diagnosis. To better meet both
+                      patient-centered and epidemiologic objectives,
+                      E-Physician’s Office, Inc., collects, aggregates,
+                      assembles and analyzes data at bedside.
                     </p>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
                   <div class="innerAdmin">
-                    <div class="videoWrapper">
-                      <div
-                        class="video-preview-image"
-                        style="
-                          background-image: url(./assets/images/solution-thumbnail.webp);
-                        "
-                      ></div>
-                      <video
-                        class="my-video"
-                        autoplay="off"
-                        loop=""
-                        controls=""
-                        width="100%"
-                        height="250"
-                      >
-                        <source type="video/mp4" src="#" />
-                      </video>
-                    </div>
+                    <a
+                      href="/assets/images/Influenza 92-108 slides.pdf"
+                      type="application/pdf"
+                      target="_blank"
+                      ><img
+                        src="/assets/images/solutions-pdf-report.webp"
+                        alt=""
+                        class="img-fluid"
+                    /></a>
                   </div>
                 </div>
               </div>
@@ -271,8 +274,8 @@
               <div
                 class="influnzaReportInnerSec d-flex flex-row justify-content-center align-items-center text-center p-0"
               >
-                <div class="imgSet">
-                  <div class="imggSec">
+                <div class="imgSet d-flex flex-column">
+                  <div class="imggSec imageBlock">
                     <img
                       src="./assets/images/influenza-report.webp"
                       alt=""
@@ -280,11 +283,17 @@
                     />
                   </div>
                   <div class="btnSec">
-                    <a class="btn" href="#">View Report</a>
+                    <a
+                      class="btn"
+                      href="/assets/images/influenza_report_1_25_2025.pdf"
+                      type="application/pdf"
+                      target="_blank"
+                      ><img src="/assets/images/Vector.png" />View Report</a
+                    >
                   </div>
                 </div>
-                <div class="imgSet02">
-                  <div class="imggSec">
+                <div class="imgSet02 d-flex flex-column">
+                  <div class="imggSec imageBlock">
                     <img
                       src="./assets/images/influenza-yearly-report.webp"
                       alt=""
@@ -292,7 +301,13 @@
                     />
                   </div>
                   <div class="btnSec">
-                    <a class="btn" href="#">View Report</a>
+                    <a
+                      class="btn"
+                      href="/assets/images/Influenza_report_2_03_25 Bird Flu.pdf"
+                      type="application/pdf"
+                      target="_blank"
+                      ><img src="/assets/images/Vector.png" />View Report</a
+                    >
                   </div>
                 </div>
               </div>
@@ -316,32 +331,25 @@
                       National Emergency Management Summit symposium outlining
                       EPO’s innovative approach to pandemic management. from the
                       bedside evaluation of a patient in a medical facility to
-                      public health/epidemiology initiatives.Comparison to
-                      conventional syndromic surveillance systems is presented
-                      in detail.
+                      public health/epidemiology initiatives.
+                    </p>
+                    <p class="contentWhite m-0">
+                      Comparison to conventional syndromic surveillance systems
+                      is presented in detail.
                     </p>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
                   <div class="innerAdmin">
-                    <div class="videoWrapper">
-                      <div
-                        class="video-preview-image"
-                        style="
-                          background-image: url(./assets/images/influnza-thumbnail.webp);
-                        "
-                      ></div>
-                      <video
-                        class="my-video"
-                        autoplay="off"
-                        loop=""
-                        controls=""
-                        width="100%"
-                        height="250"
-                      >
-                        <source type="video/mp4" src="#" />
-                      </video>
-                    </div>
+                    <a
+                      href="/assets/images/EPhysician Bird Flu PP.pdf"
+                      type="application/pdf"
+                      target="_blank"
+                      ><img
+                        src="/assets/images/birdflu-report-thumbnail.webp"
+                        alt=""
+                        class="img-fluid"
+                    /></a>
                   </div>
                 </div>
               </div>
