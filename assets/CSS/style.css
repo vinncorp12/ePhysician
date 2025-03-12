@@ -963,6 +963,19 @@ footer.footerSec ul {
 /* set banner space on tablet device*/
 /* define custom classes for converting flex row to column*/
 @media (max-width: 767px) {
+  .influenzaContent {
+    padding: 0 !important;
+  }
+  .pandemicInnerBlock,
+  .diseaseInnerBlock {
+    gap: 20px !important;
+  }
+  .documentInnerSec,
+  .influnzaReportInnerSec {
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 0 20px !important;
+  }
   .pandemicSec h3,
   .pandemicSec .textWidget,
   .influenzaContent,
