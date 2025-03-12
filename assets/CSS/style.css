@@ -536,8 +536,8 @@ footer.footerSec ul {
 }
 @media (max-width: 991px) {
   .influenzaContent {
-    width: 400px;
-    padding: 0 30px;
+    width: 400px !important;
+    padding: 0 30px !important;
   }
   .tabContent li.display-block {
     display: block;
