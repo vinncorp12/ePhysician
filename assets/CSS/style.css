@@ -499,6 +499,9 @@ footer.footerSec ul {
   }
 }
 @media (max-width: 1366px) and (min-width: 1030px) {
+  .pandemicSec h3 {
+    width: 600px;
+  }
   .appChildSec p.card-title {
     height: 300px !important;
   }
@@ -532,6 +535,10 @@ footer.footerSec ul {
   }
 }
 @media (max-width: 991px) {
+  .influenzaContent {
+    width: 400px;
+    padding: 0 30px;
+  }
   .tabContent li.display-block {
     display: block;
   }
