@@ -967,7 +967,8 @@ footer.footerSec ul {
     padding: 0 !important;
   }
   .pandemicInnerBlock,
-  .diseaseInnerBlock {
+  .diseaseInnerBlock,
+  .influenzaContent {
     gap: 20px !important;
   }
   .documentInnerSec,
