@@ -963,6 +963,12 @@ footer.footerSec ul {
 /* set banner space on tablet device*/
 /* define custom classes for converting flex row to column*/
 @media (max-width: 767px) {
+  .pandemicSec h3,
+  .pandemicSec .textWidget,
+  .influenzaContent,
+  .diseaseSec .textWidget {
+    width: 100% !important;
+  }
   .tabContent li {
     display: none;
   }
