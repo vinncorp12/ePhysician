@@ -500,7 +500,7 @@ footer.footerSec ul {
 }
 @media (max-width: 1366px) and (min-width: 1030px) {
   .pandemicSec h3 {
-    width: 600px;
+    width: 600px !important;
   }
   .appChildSec p.card-title {
     height: 300px !important;
