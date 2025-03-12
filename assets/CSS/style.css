@@ -3443,3 +3443,8 @@ a.lightbox-close:after {
   background-size: cover;
   background-position: center;
 }
+.documentSec {
+  background: url(/ePhysician/assets/images/document-bg.webp) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
