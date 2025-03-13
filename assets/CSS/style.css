@@ -3490,9 +3490,7 @@ section.adminSec .txtBlock {
 .lightbox-target:target a.lightbox-close {
   top: 0px;
 }
-.overflow-hidden {
-  overflow: hidden;
-}
+
 .influnzaReportSec {
   background: url(/ePhysician/assets/images/reports-bg.webp) no-repeat;
   background-size: cover;
