@@ -9,6 +9,7 @@
   --btnColor: #002c7c;
   --labelColor: #313131;
 }
+
 .backgroundWhite {
   background: #fff;
 }
@@ -3402,87 +3403,86 @@ section.adminSec .txtBlock {
   width: 700px;
   padding: 0 120px;
 }
-/* Styles the thumbnail */
+/* Style for the lightbox */
 .lightbox-target {
   position: fixed;
-  top: -100%;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.7);
   opacity: 0;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  -o-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
-  overflow: hidden;
-  z-index: 999;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
+  z-index: 9999;
 }
+
+/* When lightbox is active */
+.lightbox-target:target {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease-in-out;
+}
+/* Hide all lightboxes by default */
+.lightbox-target {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
+  z-index: 9999;
+}
+
+/* When lightbox is active (via JS) */
+.lightbox-target.active {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Style for the image inside lightbox */
 .lightbox-target img {
   margin: auto;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  max-height: 0%;
-  max-width: 0%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  max-height: 90%;
   border: 3px solid white;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
   box-sizing: border-box;
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
 }
-a.lightbox-close {
+
+/* Close button styles */
+.lightbox-close {
   display: block;
   width: 50px;
   height: 50px;
-  box-sizing: border-box;
   background: white;
   color: black;
   text-decoration: none;
   position: absolute;
-  top: -80px;
-  right: 0;
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-a.lightbox-close:before {
-  content: "";
-  display: block;
-  height: 30px;
-  width: 1px;
-  background: black;
-  position: absolute;
-  left: 26px;
   top: 10px;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
+  right: 10px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  font-size: 20px;
 }
-a.lightbox-close:after {
-  content: "";
-  display: block;
-  height: 30px;
-  width: 1px;
-  background: black;
-  position: absolute;
-  left: 26px;
-  top: 10px;
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+
+/* Cross inside the close button */
+.lightbox-close:before {
+  content: "×";
+  font-size: 30px;
+  color: black;
 }
-.lightbox-target:target {
-  opacity: 1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-}
+
 .lightbox-target:target img {
   max-height: 100%;
   max-width: 100%;
@@ -3490,7 +3490,9 @@ a.lightbox-close:after {
 .lightbox-target:target a.lightbox-close {
   top: 0px;
 }
-
+.overflow-hidden {
+  overflow: hidden;
+}
 .influnzaReportSec {
   background: url(/ePhysician/assets/images/reports-bg.webp) no-repeat;
   background-size: cover;

@@ -203,5 +203,55 @@ window.onload = function () {
         targetSection.scrollIntoView({ behavior: "smooth" });
       }
     }
-  }, 500); // Adjust delay based on your preloader duration
+  }, 500);
 };
+// Function to lock the body from scrolling
+function openLightbox(id) {
+  // Prevent scroll on the body
+  document.body.classList.add("overflow-hidden");
+
+  // Show the lightbox with the specific ID by adding the 'active' class
+  var lightbox = document.getElementById(id);
+  lightbox.classList.add("active");
+}
+
+// Function to close the lightbox and unlock scrolling
+function closeLightbox(event, id) {
+  event.preventDefault(); // Prevents default action (hash URL change)
+
+  // Hide the lightbox by removing the 'active' class
+  var lightbox = document.getElementById(id);
+  lightbox.classList.remove("active");
+
+  // Restore scroll to the body
+  document.body.classList.remove("overflow-hidden");
+
+  // Remove the hash from the URL to reset the state
+  history.pushState(null, null, " ");
+}
+
+// Add event listeners to open the lightbox when clicking on thumbnails
+document.querySelectorAll(".lightbox").forEach(function (lightbox) {
+  lightbox.addEventListener("click", function (event) {
+    var targetId = lightbox.getAttribute("href").substring(1); // Get the ID from the href
+    openLightbox(targetId); // Open the lightbox with the corresponding ID
+    event.preventDefault(); // Prevent default hash behavior
+  });
+});
+
+// Add event listeners to close the lightbox
+document.querySelectorAll(".lightbox-close").forEach(function (closeBtn) {
+  closeBtn.addEventListener("click", function (event) {
+    var targetId = closeBtn.getAttribute("id").replace("close-btn-", ""); // Get the target ID from the close button
+    closeLightbox(event, targetId); // Close the lightbox with the corresponding ID
+  });
+});
+
+// Check if the URL has a hash on page load (in case of refresh)
+document.addEventListener("DOMContentLoaded", function () {
+  var hash = window.location.hash; // Get the current hash from the URL
+  if (hash) {
+    var targetId = hash.substring(1); // Extract the ID from the hash
+    openLightbox(targetId); // Open the corresponding lightbox
+  }
+});
