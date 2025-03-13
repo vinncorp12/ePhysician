@@ -248,10 +248,10 @@ document.querySelectorAll(".lightbox-close").forEach(function (closeBtn) {
 });
 
 // Check if the URL has a hash on page load (in case of refresh)
-document.addEventListener("DOMContentLoaded", function () {
-  var hash = window.location.hash; // Get the current hash from the URL
-  if (hash) {
-    var targetId = hash.substring(1); // Extract the ID from the hash
-    openLightbox(targetId); // Open the corresponding lightbox
-  }
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   var hash = window.location.hash;
+//   if (hash) {
+//     var targetId = hash.substring(1);
+//     openLightbox(targetId);
+//   }
+// });
