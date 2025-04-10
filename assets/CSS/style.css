@@ -306,6 +306,9 @@ footer.footerSec ul {
 .footerSec .ftrMainSec {
   padding: 0 !important;
 }
+.btnInfection {
+  padding: 15px 30px !important;
+}
 /* Media Query  */
 @media (min-width: 1400px) {
   .databaseSec .innerDbSec::before {
