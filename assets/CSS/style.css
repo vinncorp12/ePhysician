@@ -3396,7 +3396,7 @@ section.adminSec .txtBlock {
 }
 .documnetBtn a.btn {
   background: linear-gradient(0deg, #0058f7, 100%, #002c7c);
-  padding: 15px 50px;
+  padding: 15px 30px;
   border-radius: 8px;
   filter: drop-shadow(2px 15px 15px #0f47af25);
   color: #fff;
