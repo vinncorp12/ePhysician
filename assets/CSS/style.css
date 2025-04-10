@@ -506,6 +506,9 @@ footer.footerSec ul {
   }
 }
 @media (max-width: 1366px) and (min-width: 1030px) {
+  .progress-wrap.active-progress {
+    transform: translateX(25px);
+  }
   .pandemicSec h3 {
     width: 600px !important;
   }
