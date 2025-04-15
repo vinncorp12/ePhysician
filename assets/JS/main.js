@@ -260,7 +260,7 @@ document.querySelectorAll(".lightbox-close").forEach(function (closeBtn) {
 document.addEventListener("DOMContentLoaded", function () {
   const images = document.querySelectorAll("img");
   images.forEach((img) => {
-    img.setAttribute("data-noimageai", "true");
+    img.setAttribute("data-noimageai", "false");
     img.setAttribute("role", "presentation");
     if (!img.hasAttribute("alt")) {
       img.setAttribute("alt", "");
