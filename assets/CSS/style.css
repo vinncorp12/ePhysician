@@ -296,7 +296,7 @@ a.nav-links-btn:hover {
 
 img.protected {
   -ms-content-zooming: none;
-  -ms-visual-search: none;
+  ms-visual-search: none;
 }
 
 .setColumn {

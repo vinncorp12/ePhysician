@@ -255,3 +255,15 @@ document.querySelectorAll(".lightbox-close").forEach(function (closeBtn) {
 //     openLightbox(targetId);
 //   }
 // });
+
+// Automatically apply image protection attributes
+document.addEventListener("DOMContentLoaded", function () {
+  const images = document.querySelectorAll("img");
+  images.forEach((img) => {
+    img.setAttribute("data-noimageai", "true");
+    img.setAttribute("role", "presentation");
+    if (!img.hasAttribute("alt")) {
+      img.setAttribute("alt", "");
+    }
+  });
+});
