@@ -293,6 +293,12 @@ a.nav-link.nav-links-btn.active {
 a.nav-links-btn:hover {
   color: var(--white);
 }
+
+img.protected {
+  -ms-content-zooming: none;
+  -ms-visual-search: none;
+}
+
 .setColumn {
   flex-wrap: nowrap;
 }
