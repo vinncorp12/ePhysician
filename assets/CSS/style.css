@@ -12,7 +12,9 @@
 img {
   pointer-events: none !important;
 }
-
+a:has(img) {
+  display: block !important;
+}
 .backgroundWhite {
   background: #fff;
 }
