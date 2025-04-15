@@ -9,6 +9,10 @@
   --btnColor: #002c7c;
   --labelColor: #313131;
 }
+img {
+  pointer-events: none !important;
+}
+
 .backgroundWhite {
   background: #fff;
 }
@@ -294,10 +298,10 @@ a.nav-links-btn:hover {
   color: var(--white);
 }
 
-img.protected {
+/* img.protected {
   -ms-content-zooming: none;
   ms-visual-search: none;
-}
+} */
 
 .setColumn {
   flex-wrap: nowrap;
