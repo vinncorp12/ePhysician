@@ -13,7 +13,7 @@ img {
   pointer-events: none !important;
 }
 a:has(img) {
-  display: block !important;
+  display: inline-block !important;
 }
 .backgroundWhite {
   background: #fff;
