@@ -267,16 +267,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll("img").forEach((img) => {
-    const div = document.createElement("div");
-    div.style.width = img.width + "px";
-    div.style.height = img.height + "px";
-    div.style.backgroundImage = `url(${img.src})`;
-    div.style.backgroundSize = "cover";
-    div.style.backgroundPosition = "center";
-    div.style.display = "inline-block";
-    img.replaceWith(div);
-  });
-});
