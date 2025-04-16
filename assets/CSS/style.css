@@ -3312,7 +3312,7 @@ section.adminSec .txtBlock {
 .influnzaReportInnerSec a.btn {
   padding: 15px 50px;
   gap: 10px;
-  display: inline-flex;
+  display: inline-flex !important;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -3323,6 +3323,7 @@ section.adminSec .txtBlock {
   border-radius: 8px;
   z-index: 1;
   border: 2px solid transparent;
+  gap: 10px;
 }
 .influnzaReportInnerSec a.btn::before {
   content: "";
