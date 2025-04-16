@@ -9,7 +9,7 @@
   --btnColor: #002c7c;
   --labelColor: #313131;
 }
-img {
+img.imggWidget {
   pointer-events: none !important;
 }
 a:has(img) {
